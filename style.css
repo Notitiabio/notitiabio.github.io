@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap");
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -19,6 +19,7 @@ h3,
 h4,
 h5 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -29,52 +30,40 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero h1 {
   font-size: 4rem;
   color: white;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  padding: 100px 0 100px 0;
 }
 
 .about-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1523384197172-aa61d18ab654?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=viktor-krc-E7qSsgMsXyA-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
 }
 
 .home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1533228876829-65c94e7b5025?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=kal-visuals-aK4iPNYipnU-unsplash.jpg");
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tim-foster-3wAPJB57w6s-unsplash.jpg");
-   */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
   background-position: bottom;
-}
-.home-hero h1 {
-  text-align: right;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
 }
 
 .science-hero {
-  display: flex;
-  flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
 }
-.science-hero h2 {
+.science-hero h1 {
   color: white;
-  text-align: left;
   font-size: 4rem;
 }
 .science-hero p {
   color: white;
-  width: 50%;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
-.science-hero h2,
+.science-hero h1,
 .science-hero p {
   padding: 50px 100px;
 }
@@ -122,7 +111,7 @@ footer {
 }
 
 .metallic-seaweed {
-  background-color: #318490;
+  background-color: #328490;
 }
 .metallic-seaweed * {
   color: white;
@@ -138,6 +127,7 @@ footer {
 
 .space-cadet {
   background-color: #1d294d;
+  color: white;
 }
 .space-cadet * {
   color: white;
@@ -164,7 +154,9 @@ footer {
   text-align: center;
 }
 .sidenav img {
+  padding: 20px 10px 20px 10px;
   width: 150px;
+  background-color: white;
 }
 
 a {
@@ -363,6 +355,42 @@ a:active {
 }
 .bullet li {
   padding: 20px;
+}
+
+.process-diagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.process-diagram img {
+  width: 100px;
+  margin: 10px;
+}
+.process-diagram li {
+  width: 100%;
+  text-align: right;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 10px 0 10px 0;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .definition {
