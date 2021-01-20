@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+
 //colors
 $metallic-seaweed: #318490;
 $maximum-blue-green: #32b7c6;
@@ -8,15 +10,9 @@ $tan: #ebb992;
 $notitia-gray: #707070;
 
 //typography
-@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap';
-$body-font: "Poppins", sans-serif;
-@import 'https://fonts.googleapis.com/css2?family=Oswald&display=swap';
-$header-font: "Oswald", sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+$font: "Raleway", sans-serif;
 
-$body-font: "Raleway", sans-serif;
-$header-font: "Raleway", sans-serif;
 $hero-font-size: 4rem;
 $header-font-size: 2.5rem;
 $quote-font-size: 1.5rem;
@@ -35,8 +31,7 @@ $transition-speed: 300ms;
 $material-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 * {
-	font-family: $body-font;
-	//font-weight: 500;
+	font-family: $font;
 	box-sizing: border-box;
 	color: $space-cadet;
 }
@@ -54,7 +49,6 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: $header-font;
 	text-align: center;
 }
 
@@ -316,7 +310,6 @@ a {
 	input[type="submit"] {
 		background-color: $tan;
 		width: 50%;
-		font-family: $header-font;
 		font-size: $header-font-size;
 		color: white;
 		float: right;
