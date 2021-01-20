@@ -1,0 +1,470 @@
+//colors
+$metallic-seaweed: #318490;
+$maximum-blue-green: #32b7c6;
+$middle-blue-green: #92e0e1;
+$space-cadet: #1d294d;
+$light-text: white;
+$tan: #ebb992;
+$notitia-gray: #707070;
+
+//typography
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap';
+$body-font: "Poppins", sans-serif;
+@import 'https://fonts.googleapis.com/css2?family=Oswald&display=swap';
+$header-font: "Oswald", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+
+$body-font: "Raleway", sans-serif;
+$header-font: "Raleway", sans-serif;
+$hero-font-size: 4rem;
+$header-font-size: 2.5rem;
+$quote-font-size: 1.5rem;
+$text-shadow: 0 2px 2px rgba(0, 0, 0, .5); //can i use same box shadow
+$default-font-weight: 500;
+
+//spacing
+$nav-padding: 0;
+$nav-margin: 50px 10px;
+$nav-width: 150px;
+$square-padding: 50px 100px;
+
+//other
+$border-radius: 25px;
+$transition-speed: 300ms;
+$material-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+* {
+	font-family: $body-font;
+	//font-weight: 500;
+	box-sizing: border-box;
+	color: $space-cadet;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	margin-left: 150px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $header-font;
+	text-align: center;
+}
+
+h1 {
+	font-size: $header-font-size;
+}
+
+//hero
+//hero
+//hero
+//hero
+.hero {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 75%;
+
+	h1 {
+		font-size: $hero-font-size;
+		color: white;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: $text-shadow;
+	}
+}
+
+.about-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("https://images.unsplash.com/photo-1523384197172-aa61d18ab654?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=viktor-krc-E7qSsgMsXyA-unsplash.jpg");
+}
+
+.home-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("https://images.unsplash.com/photo-1533228876829-65c94e7b5025?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=kal-visuals-aK4iPNYipnU-unsplash.jpg");
+
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tim-foster-3wAPJB57w6s-unsplash.jpg");
+  */
+	background-position: bottom;
+	h1 {
+		text-align: right;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+	}
+}
+
+.science-hero {
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("/images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
+
+	h2 {
+		color: white;
+		text-align: left;
+		font-size: $hero-font-size;
+	}
+
+	p {
+		color: white;
+		width: 50%;
+	}
+
+	h2,
+	p {
+		padding: $square-padding;
+	}
+}
+
+.logo {
+	width: 6.5rem;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	font-size: .75rem;
+}
+
+//grid layout
+//grid layout
+//grid layout
+//grid layout
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	//flex-direction: row-reverse;
+}
+
+.square {
+	width: 50%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: $square-padding;
+}
+
+.full {
+	width: 100%;
+	padding: $square-padding;
+	font-size: $hero-font-size;
+}
+
+.map-square {
+	padding: 0;
+
+	div {
+		padding: $square-padding;
+	}
+}
+
+.middle-blue-green {
+	background-color: $middle-blue-green;
+}
+
+.metallic-seaweed {
+	background-color: $metallic-seaweed;
+
+	* {
+		color: white;
+	}
+	h1 {
+		font-size: $hero-font-size;
+	}
+}
+
+.quote {
+	font-size: $quote-font-size;
+	text-align: center;
+}
+
+.space-cadet {
+	background-color: $space-cadet;
+	* {
+		color: white;
+	}
+	h1 {
+		padding: $square-padding;
+	}
+}
+
+//navbar
+//navbar
+//navbar
+//navbar
+.sidenav {
+	background: $space-cadet;
+	height: 100%;
+	width: $nav-width;
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
+
+	box-shadow: $material-box-shadow;
+
+	a {
+		padding: $nav-padding;
+		margin: $nav-margin;
+		text-decoration: none;
+		color: $light-text;
+		display: block;
+		text-align: center;
+	}
+
+	img {
+		width: $nav-width;
+	}
+}
+
+//link animation
+//link animation
+a {
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+		background-size: 100% 2px;
+	}
+	&:active {
+		opacity: 50%;
+	}
+}
+
+//about us
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	figure {
+		text-align: center;
+	}
+
+	h1 {
+		text-align: center;
+		width: 100%;
+	}
+
+	img {
+		width: 200px;
+		border-radius: 500px;
+		padding-bottom: 20px;
+
+		&:hover {
+			opacity: 80%;
+			transition: $transition-speed;
+			transition-timing-function: ease-in-out;
+		}
+	}
+
+	figcaption {
+		text-align: center;
+		max-width: 200px;
+	}
+}
+
+.caption {
+	font-size: .75rem;
+	color: $notitia-gray;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+//contact form
+//contact form
+//contact form
+//contact form
+.contact {
+	width: 100%;
+	margin: 0;
+	label {
+		font-size: $quote-font-size;
+	}
+	input,
+	textarea {
+		border-radius: $border-radius;
+		width: 100%;
+		border: none;
+		padding: 12px;
+		margin-bottom: 20px;
+		&:focus {
+			outline: none;
+			border: 2px solid $space-cadet;
+		}
+	}
+	input[type="submit"] {
+		background-color: $tan;
+		width: 50%;
+		font-family: $header-font;
+		font-size: $header-font-size;
+		color: white;
+		float: right;
+
+		&:hover {
+			background-color: darken($tan, 20%);
+			transition: $transition-speed;
+			cursor: pointer;
+		}
+	}
+	&::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input[type="number"] {
+		-moz-appearance: textfield;
+	}
+	textarea {
+		height: 300px;
+	}
+}
+
+.contact-us {
+	padding: 20px;
+	border-radius: $border-radius;
+	position: fixed;
+	background-color: $tan;
+	color: white;
+	border: none;
+	font-size: $quote-font-size;
+	right: 2%;
+	bottom: 2%;
+	box-shadow: $material-box-shadow;
+
+	&:hover {
+		background-color: darken($tan, 20%);
+		transition: $transition-speed;
+		cursor: pointer;
+	}
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+//modal
+//modal
+//modal
+//modal
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.person-modal-content {
+	background-color: white;
+	margin: 20% auto; /* 15% from the top and centered */
+	padding: 0;
+	width: 75%; /* Could be more or less, depending on screen size */
+	border-radius: $border-radius;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 400px;
+	min-width: 300px;
+	justify-content: space-evenly;
+	align-items: center;
+
+	h1 {
+		width: 70%;
+		font-size: $header-font-size;
+		margin: 0;
+	}
+	.img-container {
+		width: 30%;
+	}
+	img {
+		width: 80%;
+	}
+	p {
+		padding: 20px;
+	}
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	font-size: 4rem;
+	font-weight: bold;
+	width: 100%;
+	text-align: right;
+	padding-right: 20px;
+	margin-bottom: -50px;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+//Science
+//Science
+//Science
+//Science
+.bullet {
+	font-size: $quote-font-size;
+
+	li {
+		padding: 20px;
+	}
+}
+
+.definition {
+	font-weight: 800;
+}
+
+.hover-me:hover ~ .sidenav {
+	background-color: red !important;
+}
+
+.science-zhao {
+	padding: 0;
+	img {
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.square {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.person-modal-content {
+		margin: 60% auto; /* 15% from the top and centered */
+	}
+}
