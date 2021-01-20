@@ -68,6 +68,10 @@ h1 {
   padding: 50px 100px;
 }
 
+.pipeline-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chromatograph-MWnm1fSYXN4-unsplash.jpg");
+}
+
 .logo {
   width: 6.5rem;
 }
@@ -406,6 +410,86 @@ a:active {
 }
 .science-zhao img {
   width: 400px;
+}
+
+.pipeline {
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+}
+.pipeline h4 {
+  text-align: left;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 25px;
+  transition: 300ms;
+}
+.progress:hover {
+  height: 2.5rem;
+  transition: 300ms;
+}
+
+.nm108 {
+  display: none;
+  transition: 300ms;
+}
+
+.pipe-1 {
+  background-color: #1d294d !important;
+}
+.pipe-1:after {
+  content: "Pre-Clinical";
+}
+
+.pipe-2:after {
+  content: "Phase 1";
+}
+
+.pipe-3 {
+  background-color: #92e0e1 !important;
+  color: #1d294d;
+}
+.pipe-3:after {
+  content: "Phase 2";
+}
+
+.pipe-4 {
+  background-color: #1d294d !important;
+}
+.pipe-4:after {
+  content: "Phase 3";
+}
+
+.pipe-gray {
+  background-color: #1d294d !important;
+  color: white;
+  opacity: 20%;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #328490;
+  transition: width 0.6s ease;
+  color: white;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 @media only screen and (max-width: 700px) {

@@ -18,7 +18,19 @@ $(document).ready(function() {
     $(modal).click(function() {
       $(modal).css("display", "none");
     });
-  })
+  });
+
+  $('section.pipeline').click(function(event) {
+console.log("ehh");
+    //display modal
+    $(".nm108").css("display", "block");
+
+    //close modal with click outside modal
+    $(modal).click(function() {
+      $(modal).css("display", "none");
+    });
+  });
+
 
 });
 
