@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap';
 
 //colors
 $metallic-seaweed: #328490;
@@ -20,7 +20,7 @@ $default-font-weight: 500;
 
 //spacing
 $nav-padding: 0;
-$nav-margin: 50px 10px;
+$nav-margin: 40px 10px;
 $nav-width: 150px;
 $square-padding: 50px 100px;
 
@@ -493,7 +493,7 @@ a {
 
 .pipeline {
 	width: 80%;
-	margin: 20px auto;
+	margin: 50px auto;
 
 	box-shadow: $material-box-shadow;
 	padding: 20px;
@@ -510,6 +510,7 @@ a {
 	overflow: hidden;
 	border-radius: $border-radius;
 	transition: $transition-speed;
+	width: 100%;
 
 	&:hover {
 		height: 2.5rem;
@@ -517,44 +518,39 @@ a {
 	}
 }
 
-.nm108 {
+.progress-expand {
 	display: none;
-	transition: 300ms;
 }
 
 .pipe-1 {
-	//opacity: 55%;
-	background-color: $space-cadet !important;
+	background-color: $space-cadet;
 	&:after {
 		content: "Pre-Clinical";
 	}
 }
 
 .pipe-2 {
-	//opacity: 70%;
-
+	background-color: $metallic-seaweed;
 	&:after {
 		content: "Phase 1";
 	}
 }
 .pipe-3 {
-	//opacity: 85%;
-	background-color: $middle-blue-green !important;
+	background-color: $middle-blue-green;
 	color: $space-cadet;
 	&:after {
 		content: "Phase 2";
 	}
 }
 .pipe-4 {
-	//opacity: 100%;
-	background-color: $space-cadet !important;
+	background-color: $space-cadet;
 	&:after {
 		content: "Phase 3";
 	}
 }
 
 .pipe-gray {
-	background-color: $space-cadet !important;
+	background-color: $space-cadet;
 	color: white;
 	opacity: 20%;
 }
@@ -571,11 +567,11 @@ a {
 	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: center;
-	background-color: $metallic-seaweed;
 	transition: width .6s ease;
 	color: white;
 	margin-right: 2px;
 	margin-left: 2px;
+	width: 25%;
 }
 
 @media only screen and (max-width: 700px) {

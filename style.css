@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap");
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap';
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -151,7 +151,7 @@ footer {
 }
 .sidenav a {
   padding: 0;
-  margin: 50px 10px;
+  margin: 40px 10px;
   text-decoration: none;
   color: white;
   display: block;
@@ -414,7 +414,7 @@ a:active {
 
 .pipeline {
   width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 20px;
 }
@@ -430,30 +430,33 @@ a:active {
   overflow: hidden;
   border-radius: 25px;
   transition: 300ms;
+  width: 100%;
 }
 .progress:hover {
   height: 2.5rem;
   transition: 300ms;
 }
 
-.nm108 {
+.progress-expand {
   display: none;
-  transition: 300ms;
 }
 
 .pipe-1 {
-  background-color: #1d294d !important;
+  background-color: #1d294d;
 }
 .pipe-1:after {
   content: "Pre-Clinical";
 }
 
+.pipe-2 {
+  background-color: #328490;
+}
 .pipe-2:after {
   content: "Phase 1";
 }
 
 .pipe-3 {
-  background-color: #92e0e1 !important;
+  background-color: #92e0e1;
   color: #1d294d;
 }
 .pipe-3:after {
@@ -461,14 +464,14 @@ a:active {
 }
 
 .pipe-4 {
-  background-color: #1d294d !important;
+  background-color: #1d294d;
 }
 .pipe-4:after {
   content: "Phase 3";
 }
 
 .pipe-gray {
-  background-color: #1d294d !important;
+  background-color: #1d294d;
   color: white;
   opacity: 20%;
 }
@@ -485,11 +488,11 @@ a:active {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  background-color: #328490;
   transition: width 0.6s ease;
   color: white;
   margin-right: 2px;
   margin-left: 2px;
+  width: 25%;
 }
 
 @media only screen and (max-width: 700px) {
