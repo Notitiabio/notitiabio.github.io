@@ -20,9 +20,9 @@ $default-font-weight: 500;
 
 //spacing
 $nav-padding: 0;
-$nav-margin: 40px 10px;
+$nav-margin: 50px 10px;
 $nav-width: 150px;
-$square-padding: 50px 100px;
+$square-padding: 3%; //50px 100px;
 
 //other
 $border-radius: 25px;
@@ -453,22 +453,36 @@ a {
 }
 
 .arrow {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	border: solid white;
-	border-width: 0 3px 3px 0;
+	border-width: 0 10px 10px 0;
 	display: inline-block;
-	padding: 3px;
 	margin: 10px 0 10px 0;
+}
+
+.red {
+	border: solid red;
+	border-width: 0 10px 10px 0;
 }
 
 .arrow-down {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
-.arrow-left {
-	transform: rotate(135deg);
-	-webkit-transform: rotate(135deg);
+.arrow-right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	border: solid greenyellow;
+	border-width: 0 10px 10px 0;
+}
+
+.red-text {
+	color: red;
+}
+
+.green-text {
+	color: greenyellow;
 }
 
 .definition {
