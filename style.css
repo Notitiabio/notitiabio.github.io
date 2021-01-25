@@ -68,6 +68,14 @@ h1 {
   padding: 3%;
 }
 
+.test {
+  width: 200px;
+}
+
+.story-hero img {
+  width: 20%;
+}
+
 .pipeline-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chromatograph-MWnm1fSYXN4-unsplash.jpg");
 }
@@ -390,6 +398,10 @@ a:active {
   border-width: 0 10px 10px 0;
   display: inline-block;
   margin: 10px 0 10px 0;
+}
+
+.panel {
+  height: 1vh;
 }
 
 .red {
