@@ -1,16 +1,35 @@
-@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;800;&display=swap';
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
-  color: #1d294d;
 }
 
 body {
   margin: 0;
 }
 
+span {
+  margin: 0;
+}
+
 main {
   margin-left: 150px;
+}
+
+#trigger1 {
+  height: 20px;
+}
+
+#trigger2 {
+  height: 20px;
+}
+
+#trigger3 {
+  height: 20px;
+}
+
+#trigger4 {
+  height: 20px;
 }
 
 h1,
@@ -34,6 +53,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 .hero h1 {
   font-size: 4rem;
@@ -44,16 +64,55 @@ h1 {
 }
 
 .about-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
 }
 
 .home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
   background-position: bottom;
 }
 
+.story-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
+  background-position: bottom;
+}
+.story-hero img {
+  position: relative;
+  width: 75%;
+  top: 35%;
+  padding: 3%;
+}
+.story-hero h2 {
+  font-size: 4rem;
+  width: 75%;
+  color: white;
+  text-align: left;
+  padding: 3%;
+  font-weight: 300;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.story-hero h2 a {
+  font-weight: 800;
+}
+
+/*
+.hero-logo {
+	//width: 75%;
+	box-sizing: border-box;
+	width: 75%;
+	position: absolute;
+	top: 20px;
+	display: block;
+	padding: 50px $square-padding;
+}
+*/
+h2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .science-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
 }
 .science-hero h1 {
   color: white;
@@ -68,16 +127,8 @@ h1 {
   padding: 3%;
 }
 
-.test {
-  width: 200px;
-}
-
-.story-hero img {
-  width: 20%;
-}
-
 .pipeline-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chromatograph-MWnm1fSYXN4-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/chromatograph-MWnm1fSYXN4-unsplash.jpg");
 }
 
 .logo {
@@ -158,8 +209,8 @@ footer {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .sidenav a {
-  padding: 0;
-  margin: 50px 10px;
+  padding: 30px 15px;
+  margin: 0;
   text-decoration: none;
   color: white;
   display: block;
@@ -169,6 +220,10 @@ footer {
   padding: 20px 10px 20px 10px;
   width: 150px;
   background-color: white;
+}
+
+.hamburger {
+  display: none;
 }
 
 a {
@@ -527,6 +582,38 @@ a:active {
   width: 25%;
 }
 
+.superorganism {
+  background-color: black;
+}
+.superorganism h1 {
+  color: white;
+  width: 100%;
+  text-align: right;
+}
+.superorganism img {
+  width: 50%;
+}
+
+.kid {
+  background-color: #edeeec;
+}
+.kid h1 {
+  color: #1d294d;
+  width: 100%;
+  text-align: right;
+}
+.kid img {
+  width: 50%;
+  box-shadow: 0 0 8px 8px #edeeec inset;
+}
+
+.gutter {
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  background-color: white;
+}
+
 @media only screen and (max-width: 700px) {
   .square {
     width: 100%;
@@ -536,6 +623,40 @@ a:active {
   .person-modal-content {
     margin: 60% auto;
     /* 15% from the top and centered */
+  }
+
+  .sidenav {
+    width: 0;
+    transition: 300ms;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: white;
+    border: 1px solid #1d294d;
+    border-radius: 5px;
+    width: 50px;
+    padding: 5px;
+    position: fixed;
+    margin: 10px;
+  }
+  .hamburger div {
+    width: 30px;
+    height: 5px;
+    background-color: #92e0e1;
+    margin: 5px auto;
+  }
+  .hamburger:hover {
+    border-radius: 50px;
+    background-color: #707070;
+  }
+  .hamburger:hover div {
+    background-color: white;
+  }
+
+  main {
+    margin: 0;
+    transition: 300ms;
   }
 }
 

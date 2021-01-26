@@ -1,56 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
     <title>Notitia | Home</title>
     <meta name="description" content="Homepage for NotitiaBio">
     <meta name="author" content="Notitia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/small-logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+-->
+
+
 </head>
 <nav class="sidenav">
-    <img src="images/Original-on-transparent.png" alt="notitia logo">
+    <img src="images/Original.svg" alt="notitia logo">
     <a href="#" class="active">Home</a>
     <a href="about.html">About us</a>
     <a href="science.html">Our Science</a>
     <a href="pipeline.html">Pipeline</a>
     <a href="investors.html">Investor & News</a>
 </nav>
+<div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
 <main>
+
     <section class="hero story-hero">
+        <img class="hero-logo" src="images/Original.svg" type="images/svg+xml">
+        <h2>Our Vision: <br>to maximize everyone's <a class="definition">healthspan</a> by keeping their gut microbiome
+            to the healthiest possible for the longest possible time</h2>
+        <h2>
+            <span data-aos="fade-in" data-aos-anchor="#trigger1">NO</span>
+            <span data-aos="fade-in" data-aos-anchor="#trigger2">Ti</span>
+            <span data-aos="fade-in" data-aos-anchor="#trigger3">TIA</span>
+            <span data-aos="fade-in" data-aos-anchor="#trigger4">(“NO-TEE-SHA”) = DATA</span>
+        </h2>
+        <div id="trigger1"></div>
+        <div id="trigger2"></div>
+        <div id="trigger3"></div>
+        <div id="trigger4"></div>
     </section>
-    <img src="images/Original.svg" type="images/svg+xml" class="test">
 
 
+
+    <section class="frame superorganism" data-aos="fade-left" data-aos-anchor="#asdf">
+        <h1>Humans are <a class="definition">superorganisms</a></h1>
+        <img src="images/pexels-pixabay-220443.jpg" class="superorganism">
+    </section>
+    <div class="gutter" id="asdf"></div>
+
+    <section class="frame kid" data-aos="zoom-out">
+        <h1>Humans are <a class="definition">superorganisms</a></h1>
+        <img src="images/pexels-amina-filkins-5560018.jpg" class="superorganism">
+    </section>
+
+    <!--
     
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
+    <section class="hero story-hero">
+        
+        <img class="hero-logo" src="images/Original.svg" type="images/svg+xml">
+        
+        <h1 data-aos="fade-in">Our Vision</h1>
+        
+    </section>
+-->
 
-        <!-- The Modal -->
-        <div id="foundation-guild-modal" class="modal">
-            <!-- Modal content -->
-            <div class="person-modal-content">
-                <span class="close">&times;</span>
-                <h1>Jeffrey Zhao</h1>
-                <div class="img-container">
-                    <img src="images/jeffrey-zhao.png">
-                </div>
-                    <p>Entrepreneur with experience in health & wellness startups and managing
-                        marketing operations in multiple international markets. Skilled in perfoming wet-lab and dry-lab
-                        benchword in microbiome-related research.</p>
+
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="foundation-guild-modal" class="modal">
+        <!-- Modal content -->
+        <div class="person-modal-content">
+            <span class="close">&times;</span>
+            <h1>Jeffrey Zhao</h1>
+            <div class="img-container">
+                <img src="images/jeffrey-zhao.png">
             </div>
+            <p>Entrepreneur with experience in health & wellness startups and managing
+                marketing operations in multiple international markets. Skilled in perfoming wet-lab and dry-lab
+                benchword in microbiome-related research.</p>
         </div>
+    </div>
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.
     </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        duration: 1200
+    </script>
 </main>
 
 </html>

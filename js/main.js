@@ -30,7 +30,14 @@ $(document).ready(function () {
     else {
       $(this).next().css("display", "none");
     }
+  });
 
+  $(".hamburger").click(function() {
+
+    if($(".sidenav").css("width") == "0px"){
+      $(".sidenav").css("width", "150px");
+      $("main").css("margin-left", "-150px");
+    }
   });
 });
 
