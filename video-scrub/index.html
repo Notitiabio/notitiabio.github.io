@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Sandbox</title>
+  <meta name="description" content="Homepage for NotitiaBio">
+  <meta name="author" content="Notitia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 4000px;
+    }
+
+    video {
+      position: fixed;
+      left: 50%;
+      top: 0;
+      height: 100vh;
+      z-index: -100;
+      background-size: cover;
+      transform: translateX(-50%);
+    }
+    .container {
+
+      height: 100vh;
+    }
+
+    
+  </style>
+</head>
+
+<main>
+
+
+  <video id="video" src="pexel.mp4"></video>
+  <div class="spacer"></div>
+  <div class="container">
+    <h1>My container</h1>
+  </div>
+  <div class="container">
+    <h1>My container number 2</h1>
+  </div>
+  <div class="container">
+    <h1>My containe 3</h1>
+  </div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+<script>
+  
+  function scrollVideo() {
+    var video = $("#video").get(0), videoLength = video.duration, scrollPosition = $(document).scrollTop();
+
+    video.currentTime = (scrollPosition / ($(document).height() - $(window).height())) * videoLength;
+
+    console.log("Videolength: " + videoLength);
+    console.log("Video currenttime: " + video.currentTime);
+
+      if(video.currentTime >= videoLength) {
+        $("#video").css("position", "relative");
+        //console.log("video end");
+        //window.scrollBy(0, window,innerHeight / 2);
+      }
+      else {
+        $("#video").css("position", "fixed");
+      }
+  }
+
+  $(window).scroll(function (e) {
+    scrollVideo();
+  });
+
+
+</script>
+
+</html>

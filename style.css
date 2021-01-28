@@ -8,28 +8,29 @@ body {
   margin: 0;
 }
 
-span {
-  margin: 0;
-}
-
 main {
   margin-left: 150px;
 }
 
-#trigger1 {
-  height: 20px;
+[data-aos].dfdf {
+  width: 50%;
 }
 
-#trigger2 {
-  height: 20px;
+[data-aos=shrink] {
+  transition-property: transform;
+  transform: scale(1);
+}
+[data-aos=shrink].aos-animate {
+  transform: scale(0.9);
 }
 
-#trigger3 {
-  height: 20px;
+[data-aos=pop] {
+  opacity: 0;
+  transition: 0;
+  transition-property: opacity;
 }
-
-#trigger4 {
-  height: 20px;
+[data-aos=pop].aos-animate {
+  opacity: 1;
 }
 
 h1,
@@ -73,7 +74,7 @@ h1 {
 }
 
 .story-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
   background-position: bottom;
 }
 .story-hero img {
@@ -82,33 +83,15 @@ h1 {
   top: 35%;
   padding: 3%;
 }
-.story-hero h2 {
-  font-size: 4rem;
+.story-hero h1 {
   width: 75%;
   color: white;
   text-align: left;
   padding: 3%;
-  font-weight: 300;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
-.story-hero h2 a {
-  font-weight: 800;
-}
-
-/*
-.hero-logo {
-	//width: 75%;
-	box-sizing: border-box;
-	width: 75%;
-	position: absolute;
-	top: 20px;
-	display: block;
-	padding: 50px $square-padding;
-}
-*/
-h2 {
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+.story-hero h1 a {
+  color: #92e0e1;
 }
 
 .science-hero {
@@ -231,13 +214,13 @@ a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 0.1em;
   transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
 }
 a:hover {
   cursor: pointer;
   text-decoration: none;
-  background-size: 100% 2px;
+  background-size: 100% 0.1em;
 }
 a:active {
   opacity: 50%;
@@ -582,39 +565,83 @@ a:active {
   width: 25%;
 }
 
-.superorganism {
+.frame {
+  text-align: right;
+}
+
+.asdf {
   background-color: black;
 }
-.superorganism h1 {
+.asdf h2,
+.asdf p {
   color: white;
-  width: 100%;
+}
+
+.superorganism {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.superorganism h2,
+.superorganism p {
+  color: white;
+  width: 50%;
   text-align: right;
+}
+.superorganism p {
+  width: 25%;
 }
 .superorganism img {
   width: 50%;
 }
+.superorganism a {
+  color: #92e0e1;
+}
+
+[data-aos=custom] {
+  color: red;
+}
+
+.half {
+  width: 50%;
+}
+
+.quarter {
+  width: 25%;
+}
 
 .kid {
   background-color: #edeeec;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
 }
-.kid h1 {
+.kid h2,
+.kid p {
   color: #1d294d;
-  width: 100%;
+  width: 50%;
   text-align: right;
 }
 .kid img {
   width: 50%;
   box-shadow: 0 0 8px 8px #edeeec inset;
 }
+.kid a {
+  color: #328490;
+}
 
 .gutter {
   width: 100%;
   height: 50px;
-  z-index: 1000;
   background-color: white;
 }
 
 @media only screen and (max-width: 700px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
   .square {
     width: 100%;
     padding: 20px;
@@ -632,13 +659,17 @@ a:active {
 
   .hamburger {
     display: block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
     border: 1px solid #1d294d;
     border-radius: 5px;
     width: 50px;
     padding: 5px;
     position: fixed;
     margin: 10px;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    z-index: 999;
   }
   .hamburger div {
     width: 30px;
@@ -649,6 +680,8 @@ a:active {
   .hamburger:hover {
     border-radius: 50px;
     background-color: #707070;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
   }
   .hamburger:hover div {
     background-color: white;

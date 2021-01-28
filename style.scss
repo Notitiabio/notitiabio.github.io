@@ -38,27 +38,31 @@ body {
 	margin: 0;
 }
 
-span {
-	margin: 0;
-}
-
 main {
 	margin-left: 150px;
 }
 
-#trigger1 {
-	height: 20px;
+[data-aos].dfdf {
+	width: 50%;
 }
 
-#trigger2 {
-	height: 20px;
+[data-aos="shrink"] {
+	transition-property: transform;
+	transform: scale(1);
+
+	&.aos-animate {
+		transform: scale(.9);
+	}
 }
 
-#trigger3 {
-	height: 20px;
-}
-#trigger4 {
-	height: 20px;
+[data-aos="pop"] {
+	opacity: 0;
+	transition: 0;
+	transition-property: opacity;
+
+	&.aos-animate {
+		opacity: 1;
+	}
 }
 
 h1,
@@ -110,14 +114,9 @@ h1 {
 }
 
 .story-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-		url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
 
 	background-position: bottom;
-
-	//testing
-	//background-attachment: fixed;
-	//background-repeat: no-repeat;
 
 	img {
 		position: relative;
@@ -125,34 +124,16 @@ h1 {
 		top: 35%;
 		padding: $square-padding;
 	}
-	h2 {
-		font-size: 4rem;
+	h1 {
 		width: 75%;
 		color: white;
 		text-align: left;
 		padding: $square-padding;
-		font-weight: 300;
 		text-shadow: $text-shadow;
 		a {
-			font-weight: 800;
+			color: $middle-blue-green;
 		}
 	}
-}
-
-/*
-.hero-logo {
-	//width: 75%;
-	box-sizing: border-box;
-	width: 75%;
-	position: absolute;
-	top: 20px;
-	display: block;
-	padding: 50px $square-padding;
-}
-*/
-h2 {
-	background-color: rgba(0, 0, 0, .2);
-	box-shadow: $material-box-shadow;
 }
 
 .science-hero {
@@ -297,12 +278,12 @@ a {
 	background-image: linear-gradient(currentColor, currentColor);
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
-	background-size: 0% 2px;
+	background-size: 0% .1em;
 	transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
-		background-size: 100% 2px;
+		background-size: 100% .1em;
 	}
 	&:active {
 		opacity: 50%;
@@ -671,42 +652,85 @@ a {
 //story
 //story
 .frame {
+	text-align: right;
+}
+
+.asdf {
+	background-color: black;
+
+	h2,
+	p {
+		color: white;
+	}
 }
 
 .superorganism {
 	background-color: black;
-	h1 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: $square-padding;
+
+	h2,
+	p {
 		color: white;
-		width: 100%;
+		width: 50%;
 		text-align: right;
+	}
+
+	p {
+		width: 25%;
 	}
 	img {
 		width: 50%;
 	}
+	a {
+		color: $middle-blue-green;
+	}
 }
 
+[data-aos="custom"] {
+	color: red;
+}
+
+.half {
+	width: 50%;
+}
+.quarter {
+	width: 25%;
+}
 .kid {
 	background-color: #edeeec;
+	display: flex;
+	flex-wrap: wrap;
+	padding: $square-padding;
 
-	h1 {
+	h2,
+	p {
 		color: $space-cadet;
-		width: 100%;
+		width: 50%;
 		text-align: right;
 	}
 	img {
 		width: 50%;
 		box-shadow: 0 0 8px 8px #edeeec inset;
 	}
+
+	a {
+		color: $metallic-seaweed;
+	}
 }
 
 .gutter {
 	width: 100%;
 	height: 50px;
-	z-index: 1000;
 	background-color: white;
 }
 
 @media only screen and (max-width: 700px) {
+	.hero h1 {
+		font-size: 3rem;
+	}
+
 	.square {
 		width: 100%;
 		padding: 20px;
@@ -724,13 +748,18 @@ a {
 
 	.hamburger {
 		display: block;
-		background-color: white;
+		background-color: rgb(255, 255, 255, .4);
+		backdrop-filter: blur(5px);
 		border: 1px solid $space-cadet;
 		border-radius: 5px;
 		width: 50px;
 		padding: 5px;
 		position: fixed;
 		margin: 10px;
+		transition: 300ms;
+		transition-timing-function: ease-in-out;
+		z-index: 999;
+
 		div {
 			width: 30px;
 			height: 5px;
@@ -741,6 +770,8 @@ a {
 		&:hover {
 			border-radius: 50px;
 			background-color: $notitia-gray;
+			transition: 300ms;
+			transition-timing-function: ease-in-out;
 
 			div {
 				background-color: white;

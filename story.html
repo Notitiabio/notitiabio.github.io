@@ -36,32 +36,52 @@
 
     <section class="hero story-hero">
         <img class="hero-logo" src="images/Original.svg" type="images/svg+xml">
-        <h2>Our Vision: <br>to maximize everyone's <a class="definition">healthspan</a> by keeping their gut microbiome
-            to the healthiest possible for the longest possible time</h2>
-        <h2>
-            <span data-aos="fade-in" data-aos-anchor="#trigger1">NO</span>
-            <span data-aos="fade-in" data-aos-anchor="#trigger2">Ti</span>
-            <span data-aos="fade-in" data-aos-anchor="#trigger3">TIA</span>
-            <span data-aos="fade-in" data-aos-anchor="#trigger4">(“NO-TEE-SHA”) = DATA</span>
-        </h2>
-        <div id="trigger1"></div>
-        <div id="trigger2"></div>
-        <div id="trigger3"></div>
-        <div id="trigger4"></div>
+        <h1>Our Vision: <br><br>to maximize everyone's <a class="definition">healthspan</a> by keeping their gut microbiome
+            to the healthiest possible for the longest possible time</h1>
+        <h1>
+            NOTITIA
+            <br>
+
+            <span data-aos="fade" data-aos-offset="100">("No -</span>
+            <span data-aos="fade" data-aos-offset="200">tee -</span>
+            <span data-aos="fade" data-aos-offset="300">sha")</span>
+            <span data-aos="fade" data-aos-offset="400">= DATA</span>
+    </section>
+
+
+    <section class="frame grid asdf " data-aos="shrink">
+        <div class="movie-container">
+        <canvas id="lifestyle-video"/>
+    </div>
     </section>
 
 
 
-    <section class="frame superorganism" data-aos="fade-left" data-aos-anchor="#asdf">
-        <h1>Humans are <a class="definition">superorganisms</a></h1>
-        <img src="images/pexels-pixabay-220443.jpg" class="superorganism">
+    <section class="frame grid asdf " id="asdf" data-aos="shrink">
+        <div class="square"></div>
+        <h2 class="square">Humans are <a class="definition">superorganisms</a></h2>
+        <div class="square"></div>
+        <p class="square">Irure ex nostrud do anim duis sit eiusmod mollit proident.In occaecat commodo ipsum aute ipsum qui non ut. Veniam esse mollit sint amet adipisicing. Do voluptate velit do deserunt tempor proident in eu fugiat velit voluptate. Ea laborum aute tempor aliquip aliqua anim excepteur elit ad reprehenderit voluptate. Nisi deserunt dolore aliquip sunt tempor in ex sit laborum occaecat cillum.</p>
+        <img  class="square" data-aos="slide-left" src="images/organism-desktop.jpg">
     </section>
-    <div class="gutter" id="asdf"></div>
 
-    <section class="frame kid" data-aos="zoom-out">
-        <h1>Humans are <a class="definition">superorganisms</a></h1>
-        <img src="images/pexels-amina-filkins-5560018.jpg" class="superorganism">
+
+    <section class="frame kid custom" id="kid" data-aos="fade-right" data-aos-id="custom">
+        <div class="half"></div>
+        <h2>Humans are <a class="definition">superorganisms</a></h2>
+        <div class="half"></div>
+        <p>Anim labore aute minim commodo quis officia fugiat reprehenderit. Culpa laborum consectetur est culpa amet labore deserunt. Cupidatat amet cillum nulla tempor culpa est aliquip eiusmod. Occaecat fugiat ad sunt qui Lorem eu aute nulla minim magna commodo.</p>
+        <img  src="images/kid-desktop.jpg">
     </section>
+
+    <section class="frame kid custom" data-aos="fade-left">
+        <div class="half"></div>
+        <h2>Humans are <a class="definition">superorganisms</a></h2>
+        <div class="half"></div>
+        <p>Anim labore aute minim commodo quis officia fugiat reprehenderit. Culpa laborum consectetur est culpa amet labore deserunt. Cupidatat amet cillum nulla tempor culpa est aliquip eiusmod. Occaecat fugiat ad sunt qui Lorem eu aute nulla minim magna commodo.</p>
+        <img  src="images/kid-desktop.jpg">
+    </section>
+
 
     <!--
     
@@ -96,14 +116,16 @@
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-        duration: 1200
+        AOS.init( {
+            //anchorPlacement: "bottom-center",
+            offset: 200,
+            duration: 1000,
+        });
     </script>
 </main>
 
