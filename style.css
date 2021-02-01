@@ -605,6 +605,7 @@ a:active {
 .progress:hover {
   height: 2.5rem;
   transition: 300ms;
+  cursor: pointer;
 }
 
 .progress-expand {
