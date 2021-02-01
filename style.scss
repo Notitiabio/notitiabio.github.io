@@ -776,12 +776,6 @@ a {
 }
 
 .banner-2 {
-	background-color: black;
-
-	h2,
-	p {
-		color: white;
-	}
 }
 
 .banner-3 {
@@ -824,30 +818,6 @@ a {
 .banner-6 {
 	background-color: black;
 	color: white;
-}
-
-#superorganism {
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	padding: $square-padding;
-
-	h2,
-	p {
-		color: $space-cadet;
-		width: 50%;
-		text-align: right;
-	}
-
-	p {
-		width: 50%;
-	}
-	img {
-		width: 50%;
-	}
-	a {
-		color: $middle-blue-green;
-	}
 }
 
 .half {
