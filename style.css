@@ -449,7 +449,7 @@ a:active {
 .person-modal-content,
 .contact-modal-content {
   background-color: white;
-  margin: 20% auto;
+  margin: 10% auto;
   /* 15% from the top and centered */
   padding: 0;
   width: 75%;
