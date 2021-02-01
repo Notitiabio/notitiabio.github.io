@@ -504,7 +504,7 @@ a {
 	right: 2%;
 	bottom: 2%;
 	box-shadow: $material-box-shadow;
-	z-index: 999;
+	z-index: 1;
 
 	&:hover {
 		background-color: darken($tan, 20%);
@@ -526,7 +526,7 @@ a {
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	z-index: 2; /* Sit on top */
 	left: 0;
 	top: 0;
 	width: 100%; /* Full width */
@@ -576,7 +576,7 @@ a {
 	width: 100%;
 	text-align: right;
 	padding-right: 20px;
-	margin-bottom: -50px;
+	//margin-bottom: -50px;
 }
 
 .close:hover,
@@ -826,21 +826,21 @@ a {
 	color: white;
 }
 
-.superorganism {
-	background-color: black;
+#superorganism {
+	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
 	padding: $square-padding;
 
 	h2,
 	p {
-		color: white;
+		color: $space-cadet;
 		width: 50%;
 		text-align: right;
 	}
 
 	p {
-		width: 25%;
+		width: 50%;
 	}
 	img {
 		width: 50%;

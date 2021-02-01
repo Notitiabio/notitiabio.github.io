@@ -410,7 +410,7 @@ a:active {
   right: 2%;
   bottom: 2%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 999;
+  z-index: 1;
 }
 .contact-us:hover {
   background-color: #db823c;
@@ -429,7 +429,7 @@ a:active {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 2;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -490,7 +490,6 @@ a:active {
   width: 100%;
   text-align: right;
   padding-right: 20px;
-  margin-bottom: -50px;
 }
 
 .close:hover,
@@ -720,25 +719,25 @@ a:active {
   color: white;
 }
 
-.superorganism {
-  background-color: black;
+#superorganism {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 3%;
 }
-.superorganism h2,
-.superorganism p {
-  color: white;
+#superorganism h2,
+#superorganism p {
+  color: #1d294d;
   width: 50%;
   text-align: right;
 }
-.superorganism p {
-  width: 25%;
-}
-.superorganism img {
+#superorganism p {
   width: 50%;
 }
-.superorganism a {
+#superorganism img {
+  width: 50%;
+}
+#superorganism a {
   color: #92e0e1;
 }
 
