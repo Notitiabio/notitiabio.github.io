@@ -332,7 +332,7 @@ footer {
 	width: $nav-width;
 	position: fixed;
 	z-index: 1;
-	overflow: hidden;
+	overflow: auto;
 
 	box-shadow: $material-box-shadow;
 
@@ -348,7 +348,6 @@ footer {
 		display: block;
 		text-align: center;
 	}
-	//fontawesoem icons
 
 	.social-media {
 		display: block;
@@ -810,7 +809,8 @@ a {
 	color: white;
 }
 
-.step-3 {
+.step-3,
+#step-3 {
 	background-color: $space-cadet;
 	color: white;
 }
