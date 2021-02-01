@@ -17,11 +17,13 @@ main {
 }
 
 [data-aos=shrink] {
-  transition-property: transform;
   transform: scale(1);
+  border-radius: 0;
+  transition-property: transform, 25px;
 }
 [data-aos=shrink].aos-animate {
-  transform: scale(0.9);
+  transform: scale(0.95);
+  border-radius: 25px;
 }
 
 [data-aos=pop] {
@@ -216,6 +218,9 @@ footer {
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+.sidenav .active {
+  font-weight: bold;
+}
 .sidenav a {
   padding: 30px 15px;
   margin: 0;
@@ -287,6 +292,7 @@ a:active {
   opacity: 80%;
   transition: 300ms;
   transition-timing-function: ease-in-out;
+  cursor: pointer;
 }
 .team figcaption {
   text-align: center;
@@ -356,6 +362,7 @@ a:active {
   right: 2%;
   bottom: 2%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 999;
 }
 .contact-us:hover {
   background-color: #db823c;
@@ -606,72 +613,60 @@ a:active {
 }
 
 .frame {
-  text-align: right;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.frame p {
+  font-size: 1.5rem;
+}
+
+.banner-2 {
+  background-color: black;
+}
+.banner-2 h2,
+.banner-2 p {
+  color: white;
+}
+
+.banner-3 {
+  background-color: #041e1f;
+}
+.banner-3 h2,
+.banner-3 p {
+  color: white;
+}
+
+.banner-4 {
+  background-color: #9daf61;
+}
+.banner-4 p {
+  color: white;
+}
+
+.banner-6 {
+  background-color: black;
+  color: white;
 }
 
 .superorganism {
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
 }
 .superorganism h2,
 .superorganism p {
   color: white;
+  width: 50%;
+  text-align: right;
 }
 .superorganism p {
-  font-size: 1.5rem;
+  width: 25%;
 }
-
-.amazon {
-  background-color: #041e1f;
+.superorganism img {
+  width: 50%;
 }
-.amazon h2,
-.amazon p {
-  color: white;
-}
-.amazon p {
-  font-size: 1.5rem;
-}
-
-.foundation-pathogen {
-  background-color: #9daf61;
-}
-.foundation-pathogen h2,
-.foundation-pathogen p {
-  color: white;
-}
-.foundation-pathogen p {
-  font-size: 1.5rem;
-}
-.foundation-pathogen img {
-  border: none;
-}
-
-/*(
-.superorganism {
-	background-color: black;
-	display: flex;
-	flex-wrap: wrap;
-	padding: $square-padding;
-
-	h2,
-	p {
-		color: white;
-		width: 50%;
-		text-align: right;
-	}
-
-	p {
-		width: 25%;
-	}
-	img {
-		width: 50%;
-	}
-	a {
-		color: $middle-blue-green;
-	}
-}
-*/
-[data-aos=custom] {
-  color: red;
+.superorganism a {
+  color: #92e0e1;
 }
 
 .half {
@@ -708,14 +703,15 @@ a:active {
   background-color: white;
 }
 
-@media only screen and (max-width: 700px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
+@media only screen and (max-width: 1000px) {
   .square {
     width: 100%;
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero h1 {
+    font-size: 3rem;
   }
 
   .person-modal-content {

@@ -47,11 +47,13 @@ main {
 }
 
 [data-aos="shrink"] {
-	transition-property: transform;
 	transform: scale(1);
+	border-radius: 0;
+	transition-property: transform, $border-radius;
 
 	&.aos-animate {
-		transform: scale(.9);
+		transform: scale(.95);
+		border-radius: $border-radius;
 	}
 }
 
@@ -281,6 +283,10 @@ footer {
 
 	box-shadow: $material-box-shadow;
 
+	.active {
+		font-weight: bold;
+	}
+
 	a {
 		padding: $nav-padding;
 		margin: $nav-margin;
@@ -363,6 +369,7 @@ a {
 			opacity: 80%;
 			transition: $transition-speed;
 			transition-timing-function: ease-in-out;
+			cursor: pointer;
 		}
 	}
 
@@ -440,6 +447,7 @@ a {
 	right: 2%;
 	bottom: 2%;
 	box-shadow: $material-box-shadow;
+	z-index: 999;
 
 	&:hover {
 		background-color: darken($tan, 20%);
@@ -701,48 +709,44 @@ a {
 //story
 //story
 .frame {
-	text-align: right;
+	box-shadow: $material-box-shadow;
+
+	p {
+		font-size: $quote-font-size;
+	}
 }
 
-.superorganism {
+.banner-2 {
 	background-color: black;
 
 	h2,
 	p {
 		color: white;
 	}
-	p {
-		font-size: $quote-font-size;
-	}
 }
 
-.amazon {
+.banner-3 {
 	background-color: #041e1f;
 
 	h2,
 	p {
 		color: white;
 	}
-	p {
-		font-size: $quote-font-size;
-	}
 }
 
-.foundation-pathogen {
+.banner-4 {
 	background-color: #9daf61;
 
-	h2,
 	p {
 		color: white;
 	}
-	p {
-		font-size: $quote-font-size;
-	}
-	img {
-		border: none;
-	}
 }
-/*(
+
+.banner-6 {
+	background-color: black;
+	color: white;
+}
+
 .superorganism {
 	background-color: black;
 	display: flex;
@@ -765,11 +769,6 @@ a {
 	a {
 		color: $middle-blue-green;
 	}
-}
-*/
-
-[data-aos="custom"] {
-	color: red;
 }
 
 .half {
@@ -806,14 +805,16 @@ a {
 	background-color: white;
 }
 
-@media only screen and (max-width: 700px) {
-	.hero h1 {
-		font-size: 3rem;
-	}
-
+@media only screen and (max-width: 1000px) {
 	.square {
 		width: 100%;
 		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.hero h1 {
+		font-size: 3rem;
 	}
 
 	.person-modal-content {
