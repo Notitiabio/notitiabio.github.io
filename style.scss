@@ -32,6 +32,7 @@ $material-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2
 * {
 	font-family: $font;
 	box-sizing: border-box;
+	color: $space-cadet;
 }
 
 body {
@@ -145,6 +146,20 @@ h1 {
 	background-position: bottom;
 }
 
+.general-public-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/salad.jpg");
+
+	.text-container {
+		width: 100%;
+		padding: $square-padding;
+		h1 {
+			color: white;
+			width: 40%;
+			text-align: left;
+		}
+	}
+}
+
 .story-hero {
 	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
 
@@ -165,6 +180,35 @@ h1 {
 		text-shadow: $text-shadow;
 		a {
 			color: $middle-blue-green;
+		}
+	}
+}
+
+.patients-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("images/gel-capsules-5834023_1920.jpg");
+
+	.text-container {
+		width: 100%;
+		padding: $square-padding;
+		h1 {
+			color: white;
+			width: 50%;
+			text-align: left;
+		}
+	}
+}
+
+.investors-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.jpg");
+	background-position: bottom;
+
+	.text-container {
+		width: 100%;
+		padding: $square-padding;
+		h1 {
+			color: white;
+			width: 100%;
 		}
 	}
 }
@@ -204,6 +248,11 @@ footer {
 	font-size: .75rem;
 }
 
+//slideshow
+//slideshow
+//slideshow
+//slideshow
+
 //grid layout
 //grid layout
 //grid layout
@@ -227,7 +276,11 @@ footer {
 .full {
 	width: 100%;
 	padding: $square-padding;
+}
+
+.hero-text {
 	font-size: $hero-font-size;
+	text-align: center;
 }
 
 .map-square {
@@ -335,6 +388,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: 0% .1em;
 	transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
+	color: currentColor;
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
@@ -395,6 +449,9 @@ a {
 .contact {
 	width: 100%;
 	margin: 0;
+	background-color: $middle-blue-green;
+	border-radius: $border-radius;
+	padding: $square-padding;
 	label {
 		font-size: $quote-font-size;
 	}
@@ -480,7 +537,8 @@ a {
 }
 
 /* Modal Content/Box */
-.person-modal-content {
+.person-modal-content,
+.contact-modal-content {
 	background-color: white;
 	margin: 20% auto; /* 15% from the top and centered */
 	padding: 0;
@@ -710,7 +768,7 @@ a {
 //story
 .frame {
 	box-shadow: $material-box-shadow;
-
+	padding: $square-padding;
 	p {
 		font-size: $quote-font-size;
 	}
@@ -740,6 +798,26 @@ a {
 	p {
 		color: white;
 	}
+}
+
+.banner-6 {
+	p {
+		color: white;
+	}
+}
+
+.step-1 {
+	background-color: $middle-blue-green;
+}
+
+.step-2 {
+	background-color: $metallic-seaweed;
+	color: white;
+}
+
+.step-3 {
+	background-color: $space-cadet;
+	color: white;
 }
 
 .banner-6 {

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
-    <title>Notitia | Investors</title>
+    <title>Notitia | Investors & News</title>
     <meta name="description" content="Homepage for NotitiaBio">
     <meta name="author" content="Notitia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,11 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/small-logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5d869ca34c.js" crossorigin="anonymous"></script>
+
+
 </head>
 <nav class="sidenav">
     <img src="images/Original.svg" alt="notitia logo">
@@ -21,66 +27,85 @@
     <a href="general-public.html">General Public</a>
     <a href="patients.html">For Patients</a>
     <a href="#" class="active">Investor & News</a>
-</nav>
-<main>
-    <section class="hero home-hero">
-        <h1>Restoring Health From Within</h1>
-    </section>
 
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </div>
+</nav>
+
+<main>
+    <button class="contact-us" id="contact-us">Contact Us</button>
+
+    <section class="hero investors-hero">
+        <div class="text-container">
+            <h1>Investors & News</h1>
+        </div>
+    </section>
+<div class="gutter"></div>
+<div class="full hero-text">
+    Stay Up to Date with Notitia's Latest Clinical Trials and Other Developments
+</div>
     <section class="grid">
         <div class="square white quote">
-            <h1>Our Mision:</h1>
-            <p>
-                To help individuals
-                obtain health by
-                promoting & restoring
-                the Foundation Guild
-                in the gut microbiome
-            </p>
+            NBT-NM108 Covid-19 in T2D & Prediabetes
         </div>
-        <div class="square space-cadet my">
-            <h1>Notitia (“No-tee-sha”) = Data</h1>
+        <div class="square space-cadet quote">
+            Product overview
         </div>
-        <div class="square middle-blue-green">
-            <form class="contact">
-                <h1>Contact Us</h1>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email">
-                <label for="phone">Phone</label><br>
-                <input type="number" id="phone" name="phone">
-
-                <label for="message">Message</label><br>
-                <textarea type="text" id="message" name="message"></textarea>
-
-                <input type="submit">
-            </form>
+        <div class="square">
         </div>
-        <div class="square map-square">
-            <div class="quote">
-                <a class="phone" href="tel:+1 833-668-4842">Toll-free: +1 833-NOTITIA</a>
-            </div>
-            <div class="quote">
-                <a class="phone" href="https://goo.gl/maps/twEjggvD753WRVzz5">Address: 11 Deerpark Dr #100 Monmouth
-                    Junction, NJ 08852</a>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4919694580913!2d-74.58798074863911!3d40.37578776595038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3dd64682a72f5%3A0xadc08aac1da874a8!2s11%20Deerpark%20Dr%20%23100%2C%20Monmouth%20Junction%2C%20NJ%2008852!5e0!3m2!1sen!2sus!4v1610571032056!5m2!1sen!2sus"
-                class="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
+        <div class="square space-cadet">
+            NBT-NM108 is an investigational, oral, high-fiber nutrient-mix drink for the treatment of COVID-19 and other respiratory viral infections in patients with type 2 diabetes (T2D) and prediabetes. The FDA has allowed the product to be tested in a phase 2a clinical trial to assess its efficacy in diabetic and prediabetic COVID-19 patients.
 
         </div>
     </section>
+
+        <!-- The Modal -->
+        <div id="contact-us-modal" class="modal">
+            <!-- Modal content -->
+            <div class="contact-modal-content">
+                <form class="contact" action="https://submit-form.com/kguz4w2C" target="_self"> 
+                    <!-- <form class="contact" action="https://usebasin.com/f/568c9b065574" target="_self"> -->
+                    <span class="close">&times;</span>
+                    <h1>Contact Us</h1>               
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="phone">
+    
+                    <label for="message">Message</label><br>
+                    <textarea type="text" id="message" name="message"></textarea>
+    
+                    <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="6LeHPDYaAAAAAI_xDWPLq2cwYnbhD6i-69OWOSuw
+                        "></div>
+                        <br/>
+                        <input type="submit" value="Submit">
+                      </form>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.
     </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            //anchorPlacement: "bottom-center",
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
 </main>
 
 </html>

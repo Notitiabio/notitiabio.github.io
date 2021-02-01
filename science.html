@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/small-logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/5d869ca34c.js" crossorigin="anonymous"></script>
 </head>
 <nav class="sidenav">
     <img src="images/Original.svg" alt="notitia logo">
@@ -18,17 +19,25 @@
     <a href="about.html">About us</a>
     <a href="#" class="active">Our Science</a>
     <a href="pipeline.html">Pipeline</a>
+    <a href="general-public.html">General Public</a>
+    <a href="patients.html">For Patients</a>
     <a href="investors.html">Investor & News</a>
+
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </div>
 </nav>
 <main>
+    <button class="contact-us" id="contact-us">Contact Us</button>
     <section class="hero science-hero">
         <h1>Our Science</h1>
             <p>Notitia Biotechnologies’ groundbreaking discovery in the ecological structure of the gut microbiome, matched with our revolutionary Foundation Guild Microbiome R&D Platform, allows us to develop unique and effective treatments for various chronic or acute complications.
             </p>
     </section>
-    <button class="contact-us">Contact Us</button>
     <section class="grid">
-        <div class="full metallic-seaweed">
+        <div class="full metallic-seaweed hero-text">
             <h1>The Foundation Guild</h1>
         </div>
         <div class="square white science-zhao">
@@ -142,7 +151,34 @@
 
     </section>
     -->
-
+        <!-- The Modal -->
+        <div id="contact-us-modal" class="modal">
+            <!-- Modal content -->
+            <div class="contact-modal-content">
+                <form class="contact" action="https://submit-form.com/kguz4w2C" target="_self"> 
+                    <!-- <form class="contact" action="https://usebasin.com/f/568c9b065574" target="_self"> -->
+                    <span class="close">&times;</span>
+                    <h1>Contact Us</h1>               
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="phone">
+    
+                    <label for="message">Message</label><br>
+                    <textarea type="text" id="message" name="message"></textarea>
+    
+                    <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="6LeHPDYaAAAAAI_xDWPLq2cwYnbhD6i-69OWOSuw
+                        "></div>
+                        <br/>
+                        <input type="submit" value="Submit">
+                      </form>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
 
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.

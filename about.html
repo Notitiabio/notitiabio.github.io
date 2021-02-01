@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/small-logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/5d869ca34c.js" crossorigin="anonymous"></script>
 </head>
 <nav class="sidenav">
     <img src="images/Original-on-transparent.png" alt="notitia logo">
@@ -19,8 +20,15 @@
     <a href="general-public.html">General Public</a>
     <a href="patients.html">For Patients</a>
     <a href="investors.html">Investor & News</a>
+
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </div>
 </nav>
 <main>
+    <button class="contact-us" id="contact-us">Contact Us</button>
     <section class="hero about-hero">
         <h1>Meet The Team</h1>
     </section>
@@ -60,7 +68,7 @@
         </figure>
         <figure id="george" class="person">
             <img src="images/george-weinstock.png" alt="George Weinstock">
-            <figcaption><a>George Weinstock<br><span class="caption">Scientific Advisor</span></a></figcaption>
+            <figcaption><a>George Weinstock Ph.D<br><span class="caption">Scientific Advisor</span></a></figcaption>
         </figure>
 
     </section>
@@ -108,7 +116,7 @@
                 <div class="img-container">
                     <img src="images/tim-lee.png">
                 </div>
-                    <p>Inesert Bio here</p>
+                    <p>Analytics professional with experience leading data science initiatives for business, marketing, and customer success analytics. Tim recieved his Masters in Business Analytics from the University of Utah.</p>
             </div>
         </div>
 
@@ -164,6 +172,46 @@
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div id="george-modal" class="modal">
+            <!-- Modal content -->
+            <div class="person-modal-content">
+                <span class="close">&times;</span>
+                <h1>George Weinstock Ph.D</h1>
+                <div class="img-container">
+                    <img src="images/george-weinstock.png">
+                </div>
+                    <p>Geneticits and microbiologist at The Jackson Laboratory for Genomic Medicine. Professor at Washington University in St. Louis. Associate director af The Genome Insitute. Co-Director of the Human Genome Sequencing Center at thje Baylor College of Medicine. Ph.D from the Massachusetts Institute of Technology</p>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="contact-us-modal" class="modal">
+            <!-- Modal content -->
+            <div class="contact-modal-content">
+                <form class="contact" action="https://submit-form.com/kguz4w2C" target="_self"> 
+                    <!-- <form class="contact" action="https://usebasin.com/f/568c9b065574" target="_self"> -->
+                    <span class="close">&times;</span>
+                    <h1>Contact Us</h1>               
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="phone">
+    
+                    <label for="message">Message</label><br>
+                    <textarea type="text" id="message" name="message"></textarea>
+    
+                    <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="6LeHPDYaAAAAAI_xDWPLq2cwYnbhD6i-69OWOSuw
+                        "></div>
+                        <br/>
+                        <input type="submit" value="Submit">
+                      </form>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.
     </footer>

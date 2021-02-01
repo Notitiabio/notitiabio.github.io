@@ -7,18 +7,32 @@ $(document).ready(function () {
   $('.definition').click(function(event) {
     toggleModal(event);
   });
+  $('.contact-us').click(function(event) {
+    toggleModal(event);
+  });
 
   function toggleModal(myEvent) {
     var modal = "#" + myEvent.currentTarget.id + "-modal";
 
-    var span = $("close");
     $(modal).css("display", "block");
 
+    $("span").click(function() {
+      $(modal).css("display", "none");
+    });
+
     //close modal with click outside modal
-    $(modal).click(function () {
+    /*
+    $(modal).click(function (event) {
+      console.log(event);
+      if(event.target.classname == "person-modal-content") {
+
+        return;
+      }
+      
       $(modal).css("display", "none");
 
     });
+    */
   }
 
   // expanded progress bar info 
@@ -54,20 +68,11 @@ $(document).ready(function () {
   });
   
 
+
+//scroll animation
+//scroll animation
+//scroll animation
 /*
-  //scroll
-  $(window).on('scroll', function (e) {
-    var top = $(window).scrollTop() + $(window).height(), isVisible = top > $('#asdf').offset().top;
- 
-    //$('#container').toggleClass('animate', isVisible);
-    //console.log("hello");
- });
-*/
-
-
-//scroll animation
-//scroll animation
-//scroll animation
 const html = document.documentElement;
 const canvas = document.getElementById("lifestyle-video");
 const context = canvas.getContext("2d");
@@ -157,8 +162,7 @@ function doOtherStuff() {
 
 
 preloadImages()
-
-
+*/
 //end of scroll animation
  document.addEventListener('aos:in:custom', ({ detail }) => {
   console.log('animated in', detail);
@@ -171,6 +175,48 @@ document.addEventListener('aos:out:custom', ({ detail }) => {
   $("kid").css("width", "100%");
 });
 
+
+//slideshow
+//slideshow
+//slideshow
+/*
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+$(".dot").click(function() {
+  let slideNum = $(this).substring(4, 5)
+  console.log(slideNum);
+  currentSlide($);
+});
+
+
+function showSlides(n) {
+  console.log("Current slide: " + n);
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-slide", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-slide";
+}
+*/
 });
 
 //  http://api.edamam.com/auto-complete?q=rou&limit=10&app_id=$90aa6a3e&app_key=$24f01456634cdf030a22c0e6bb73f0a3

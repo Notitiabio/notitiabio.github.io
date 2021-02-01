@@ -2,6 +2,7 @@
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
+  color: #1d294d;
 }
 
 body {
@@ -100,6 +101,19 @@ h1 {
   background-position: bottom;
 }
 
+.general-public-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/salad.jpg");
+}
+.general-public-hero .text-container {
+  width: 100%;
+  padding: 3%;
+}
+.general-public-hero .text-container h1 {
+  color: white;
+  width: 40%;
+  text-align: left;
+}
+
 .story-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
   background-position: bottom;
@@ -119,6 +133,32 @@ h1 {
 }
 .story-hero h1 a {
   color: #92e0e1;
+}
+
+.patients-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/gel-capsules-5834023_1920.jpg");
+}
+.patients-hero .text-container {
+  width: 100%;
+  padding: 3%;
+}
+.patients-hero .text-container h1 {
+  color: white;
+  width: 50%;
+  text-align: left;
+}
+
+.investors-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.jpg");
+  background-position: bottom;
+}
+.investors-hero .text-container {
+  width: 100%;
+  padding: 3%;
+}
+.investors-hero .text-container h1 {
+  color: white;
+  width: 100%;
 }
 
 .science-hero {
@@ -169,7 +209,11 @@ footer {
 .full {
   width: 100%;
   padding: 3%;
+}
+
+.hero-text {
   font-size: 4rem;
+  text-align: center;
 }
 
 .map-square {
@@ -261,6 +305,7 @@ a {
   background-repeat: no-repeat;
   background-size: 0% 0.1em;
   transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
+  color: currentColor;
 }
 a:hover {
   cursor: pointer;
@@ -310,6 +355,9 @@ a:active {
 .contact {
   width: 100%;
   margin: 0;
+  background-color: #92e0e1;
+  border-radius: 25px;
+  padding: 3%;
 }
 .contact label {
   font-size: 1.5rem;
@@ -398,7 +446,8 @@ a:active {
 }
 
 /* Modal Content/Box */
-.person-modal-content {
+.person-modal-content,
+.contact-modal-content {
   background-color: white;
   margin: 20% auto;
   /* 15% from the top and centered */
@@ -414,18 +463,22 @@ a:active {
   justify-content: space-evenly;
   align-items: center;
 }
-.person-modal-content h1 {
+.person-modal-content h1,
+.contact-modal-content h1 {
   width: 70%;
   font-size: 2.5rem;
   margin: 0;
 }
-.person-modal-content .img-container {
+.person-modal-content .img-container,
+.contact-modal-content .img-container {
   width: 30%;
 }
-.person-modal-content img {
+.person-modal-content img,
+.contact-modal-content img {
   width: 80%;
 }
-.person-modal-content p {
+.person-modal-content p,
+.contact-modal-content p {
   padding: 20px;
 }
 
@@ -614,6 +667,7 @@ a:active {
 
 .frame {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 3%;
 }
 .frame p {
   font-size: 1.5rem;
@@ -639,6 +693,24 @@ a:active {
   background-color: #9daf61;
 }
 .banner-4 p {
+  color: white;
+}
+
+.banner-6 p {
+  color: white;
+}
+
+.step-1 {
+  background-color: #92e0e1;
+}
+
+.step-2 {
+  background-color: #328490;
+  color: white;
+}
+
+.step-3 {
+  background-color: #1d294d;
   color: white;
 }
 
