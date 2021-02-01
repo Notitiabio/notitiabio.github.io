@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;800;&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
 
 //colors
 $metallic-seaweed: #328490;
@@ -96,9 +96,9 @@ h1 {
 	//margin-bottom: 15000px;
 	//width: 200px;
 	canvas {
+		top: 0;
 		max-width: calc(100vw - 150px);
 		max-height: 100vh;
-		top: 0;
 	}
 }
 #thiccer {
@@ -286,6 +286,24 @@ footer {
 		color: $light-text;
 		display: block;
 		text-align: center;
+	}
+	//fontawesoem icons
+
+	.social-media {
+		display: block;
+		padding: $nav-padding;
+		a {
+			display: inline;
+			padding: 0 2px;
+		}
+		a i {
+			font-size: 38px;
+
+			&:hover {
+				opacity: 80%;
+				transition: 300ms;
+			}
+		}
 	}
 
 	img {

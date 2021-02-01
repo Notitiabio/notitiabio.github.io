@@ -49,8 +49,9 @@ $(document).ready(function () {
 
       $(".sidenav").css("width", "0px");
       $("main").css("margin-left", "0px");
+      $(".hamburger").css("display", "block");
     }
-  })
+  });
   
 
 /*
@@ -71,9 +72,9 @@ const html = document.documentElement;
 const canvas = document.getElementById("lifestyle-video");
 const context = canvas.getContext("2d");
 
-const frameCount = 305  ;
+const frameCount = 153;
 
-const currentFrame = index => (`images/video/frame-${index.toString().padStart(3, '0')}.jpg`);
+const currentFrame = index => (`images/video/every-other/frame-${index.toString().padStart(3, '0')}.jpg`);
 
 
 const preloadImages = () => {
@@ -127,18 +128,21 @@ $(window).scroll(function() {
 
 function changeFrame() {
   let videoHeight = 9460;
-
+  //scrolltop is top position of canvas
   const scrollTop = html.scrollTop;
-  //const maxScrollTop = html.scrollHeight - window.innerHeight;
-  
+
+  //end value 
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
   const scrollFraction = scrollTop / maxScrollTop;
-  const frameIndex = Math.min(
+  const frameIndex = (Math.min(
     frameCount - 1,
     Math.ceil(scrollFraction * frameCount)
-    );
+    )); //- 64;
 
-console.log("HTML scroll heght: " + html.scrollHeight);
-console.log("HTML scroll top: " + html.scrollTop);
+    // console.log("HTML scroll top: " + html.scrollTop);
+    // console.log("Scroll Fraction: " + scrollFraction);
+     console.log("Frame index: " + frameIndex);
+    // console.log("max scroll top: " + maxScrollTop)
 
   requestAnimationFrame(() => updateImage(frameIndex + 1))
 }
