@@ -727,6 +727,21 @@ a {
 		font-size: $quote-font-size;
 	}
 }
+
+.foundation-pathogen {
+	background-color: #9daf61;
+
+	h2,
+	p {
+		color: white;
+	}
+	p {
+		font-size: $quote-font-size;
+	}
+	img {
+		border: none;
+	}
+}
 /*(
 .superorganism {
 	background-color: black;

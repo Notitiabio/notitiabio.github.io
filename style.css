@@ -631,6 +631,20 @@ a:active {
   font-size: 1.5rem;
 }
 
+.foundation-pathogen {
+  background-color: #9daf61;
+}
+.foundation-pathogen h2,
+.foundation-pathogen p {
+  color: white;
+}
+.foundation-pathogen p {
+  font-size: 1.5rem;
+}
+.foundation-pathogen img {
+  border: none;
+}
+
 /*(
 .superorganism {
 	background-color: black;
