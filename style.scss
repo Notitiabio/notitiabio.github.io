@@ -81,10 +81,9 @@ h1 {
 	font-size: $header-font-size;
 }
 
-.thicc {
-	height: 1080px;
+.phd {
+	text-transform: capitalize;
 }
-
 //canvas
 //canvas
 //canvas
@@ -253,6 +252,45 @@ footer {
 //slideshow
 //slideshow
 //slideshow
+
+//pipeline-table
+//pipeline-table
+//pipeline-table
+//pipeline-table
+.pipeline-table {
+	background-color: $metallic-seaweed;
+	border-radius: $border-radius;
+	box-shadow: $material-box-shadow;
+
+	td,
+	th {
+		padding: 10px;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: $space-cadet;
+	}
+
+	//center content except first column
+	tr td:nth-child(n + 2) {
+		text-align: center;
+
+		span {
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+	.nm108 {
+		background-color: gray;
+	}
+	.bm306 {
+		background-color: pink;
+	}
+	.completed {
+		background-color: blue;
+	}
+}
 
 //grid layout
 //grid layout

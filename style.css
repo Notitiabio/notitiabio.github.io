@@ -49,8 +49,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-.thicc {
-  height: 1080px;
+.phd {
+  text-transform: capitalize;
 }
 
 /*
@@ -191,6 +191,36 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 0.75rem;
+}
+
+.pipeline-table {
+  background-color: #328490;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.pipeline-table td,
+.pipeline-table th {
+  padding: 10px;
+  color: white;
+}
+.pipeline-table tr:nth-child(even) {
+  background-color: #1d294d;
+}
+.pipeline-table tr td:nth-child(n+2) {
+  text-align: center;
+}
+.pipeline-table tr td:nth-child(n+2) span {
+  padding: 5px;
+  border-radius: 5px;
+}
+.pipeline-table .nm108 {
+  background-color: gray;
+}
+.pipeline-table .bm306 {
+  background-color: pink;
+}
+.pipeline-table .completed {
+  background-color: blue;
 }
 
 .grid {
