@@ -703,7 +703,8 @@ a:active {
   color: white;
 }
 
-.step-3 {
+.step-3,
+#step-3 {
   background-color: #1d294d;
   color: white;
 }
