@@ -96,11 +96,13 @@ h1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
 }
 
+/*
 .home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
-  background-position: bottom;
-}
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
 
+	background-position: bottom;
+}*/
 .general-public-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/salad.jpg");
 }
@@ -114,24 +116,24 @@ h1 {
   text-align: left;
 }
 
-.story-hero {
+.home-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
   background-position: bottom;
   height: 1950px;
 }
-.story-hero img {
+.home-hero img {
   position: relative;
   width: 75%;
   top: -5%;
 }
-.story-hero h1 {
+.home-hero h1 {
   width: 75%;
   color: white;
   text-align: left;
   padding: 3%;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
-.story-hero h1 a {
+.home-hero h1 a {
   color: #92e0e1;
 }
 
