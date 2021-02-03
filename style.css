@@ -113,7 +113,7 @@ h1 {
 }
 .general-public-hero .text-container {
   width: 100%;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .general-public-hero .text-container h1 {
   color: white;
@@ -130,7 +130,7 @@ h1 {
   width: 100%;
   color: white;
   text-align: left;
-  padding: 3%;
+  padding: 3% 10%;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 .home-hero h1 a {
@@ -148,7 +148,7 @@ h1 {
 }
 .patients-hero .text-container {
   width: 100%;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .patients-hero .text-container h1 {
   color: white;
@@ -162,7 +162,7 @@ h1 {
 }
 .investors-hero .text-container {
   width: 100%;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .investors-hero .text-container h1 {
   color: white;
@@ -176,13 +176,23 @@ h1 {
   color: white;
   font-size: 4rem;
 }
+.science-hero .science-text {
+  width: 100%;
+}
+.science-hero .science-text h2 {
+  color: white;
+  font-size: 2.5rem;
+  width: 50%;
+  text-align: left;
+  padding: 3% 10%;
+}
 .science-hero p {
   color: white;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 .science-hero h1,
 .science-hero p {
-  padding: 3%;
+  padding: 3% 10%;
 }
 
 .pipeline-hero {
@@ -327,17 +337,16 @@ table tbody tr:nth-child(even) {
 
 table td,
 table th {
-  padding: 8px 14px;
+  padding: 15px;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 table th {
   font-weight: 700;
-  font-size: 0.8rem;
   margin: 0;
   max-width: 800px;
   line-height: inherit;
-  color: #151515;
 }
 
 table tr td:first-child {
@@ -345,7 +354,7 @@ table tr td:first-child {
   font-weight: 800;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 930px) {
   table th {
     display: none;
   }
@@ -353,12 +362,18 @@ table tr td:first-child {
   table td {
     position: relative;
     display: block;
-    padding-left: 110px;
+    padding-left: 150px;
+    height: 75px;
+    border-bottom: 1px solid #1d294d;
+  }
+
+  table td:last-child {
+    border: none;
   }
 
   table td:before {
     position: absolute;
-    top: 8px;
+    top: 15px;
     left: 10px;
     display: block;
     content: attr(aria-label) ": ";
@@ -366,7 +381,6 @@ table tr td:first-child {
   }
 
   table tbody tr {
-    padding: 20px 0;
     display: block;
   }
 
@@ -386,12 +400,17 @@ table tr td:first-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3%;
+  padding: 3% 10%;
+}
+
+.third {
+  width: 30%;
+  margin: 0;
 }
 
 .full {
   width: 100%;
-  padding: 3%;
+  padding: 3% 10%;
 }
 
 .hero-text {
@@ -403,7 +422,7 @@ table tr td:first-child {
   padding: 0;
 }
 .map-square div {
-  padding: 3%;
+  padding: 3% 10%;
 }
 
 .middle-blue-green {
@@ -433,7 +452,7 @@ table tr td:first-child {
   color: white;
 }
 .space-cadet h1 {
-  padding: 3%;
+  padding: 3% 10%;
 }
 
 .sidenav {
@@ -540,7 +559,7 @@ a:active {
   margin: 0;
   background-color: #92e0e1;
   border-radius: 25px;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .contact label {
   font-size: 1.5rem;
@@ -745,6 +764,10 @@ a:active {
 .red-text {
   color: red;
 }
+.red-text h4,
+.red-text li {
+  color: red;
+}
 
 .green-text {
   color: greenyellow;
@@ -849,9 +872,63 @@ a:active {
   width: 25%;
 }
 
+.pipeline-container {
+  width: 100%;
+  margin: 50px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+}
+.pipeline-container h4 {
+  text-align: left;
+}
+
+.condition-bar,
+.small-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  transition: width 0.6s ease;
+  color: white;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.progress-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  overflow: hidden;
+  transition: 300ms;
+  width: 100%;
+  background-color: #1d294d;
+  color: white;
+}
+.progress-header:hover {
+  height: 2.5rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.condition-bar {
+  width: 30%;
+}
+
+.small-bar {
+  width: 10%;
+}
+
 .frame {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  padding: 3%;
+  padding: 3% 10%;
 }
 .frame p {
   font-size: 1.5rem;
@@ -924,7 +1001,7 @@ a:active {
   background-color: #edeeec;
   display: flex;
   flex-wrap: wrap;
-  padding: 3%;
+  padding: 3% 10%;
 }
 .kid h2,
 .kid p {
