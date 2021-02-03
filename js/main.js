@@ -39,17 +39,9 @@ $(document).ready(function () {
       $(".sidenav").css("width", "150px");
       $("main").css("margin-left", "150px");
     }
-  });
-  
-  //collapse nav
-  $("main").click(function() {
-
-    if($(window).width() < 700 && $(".sidenav").css("width") == "150px") {
-      console.log('here');
-
+    else {
       $(".sidenav").css("width", "0px");
       $("main").css("margin-left", "0px");
-      $(".hamburger").css("display", "block");
     }
   });
   

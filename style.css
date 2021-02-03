@@ -45,6 +45,18 @@ h1 {
   text-transform: capitalize;
 }
 
+.notitia-fade {
+  font-size: 4rem;
+}
+.notitia-fade .notitia-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+.notitia-fade .notitia-container img {
+  width: 400px;
+}
+
 /*
 .movie-container {
 	//position: relative;
@@ -620,10 +632,10 @@ a:active {
 .person-modal-content,
 .contact-modal-content {
   background-color: white;
-  margin: 10% auto;
+  margin: 10px auto;
   /* 15% from the top and centered */
   padding: 0;
-  width: 75%;
+  width: 50%;
   /* Could be more or less, depending on screen size */
   border-radius: 25px;
   display: flex;
@@ -651,6 +663,7 @@ a:active {
 .person-modal-content p,
 .contact-modal-content p {
   padding: 20px;
+  font-size: 1.5rem;
 }
 
 /* The Close Button */
@@ -984,8 +997,9 @@ a:active {
     width: 50px;
     padding: 5px;
     position: fixed;
-    margin: 10px;
     transition: 300ms;
+    right: 10px;
+    top: 10px;
     transition-timing-function: ease-in-out;
     z-index: 999;
   }

@@ -74,6 +74,18 @@ h1 {
 .phd {
 	text-transform: capitalize;
 }
+
+.notitia-fade {
+	font-size: $hero-font-size;
+	.notitia-container {
+		width: 100%;
+		text-align: center;
+		padding-top: 50px;
+		img {
+			width: 400px;
+		}
+	}
+}
 //canvas
 //canvas
 //canvas
@@ -710,9 +722,9 @@ a {
 .person-modal-content,
 .contact-modal-content {
 	background-color: white;
-	margin: 10% auto; /* 15% from the top and centered */
+	margin: 10px auto; /* 15% from the top and centered */
 	padding: 0;
-	width: 75%; /* Could be more or less, depending on screen size */
+	width: 50%; /* Could be more or less, depending on screen size */
 	border-radius: $border-radius;
 	display: flex;
 	flex-wrap: wrap;
@@ -735,6 +747,7 @@ a {
 	}
 	p {
 		padding: 20px;
+		font-size: $quote-font-size;
 	}
 }
 
@@ -1098,8 +1111,9 @@ a {
 		width: 50px;
 		padding: 5px;
 		position: fixed;
-		margin: 10px;
 		transition: 300ms;
+		right: 10px;
+		top: 10px;
 		transition-timing-function: ease-in-out;
 		z-index: 999;
 
