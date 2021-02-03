@@ -393,6 +393,17 @@ table tr td:first-child {
   flex-wrap: wrap;
 }
 
+.news div {
+  width: 75%;
+}
+.news:first-child {
+  width: 25%;
+}
+
+.caption {
+  font-style: italic;
+}
+
 .square {
   width: 50%;
   margin: 0;
@@ -1023,20 +1034,9 @@ a:active {
   background-color: white;
 }
 
-@media only screen and (max-height: 1000px) {
-  .carousel-item .carousel-text p,
-.carousel-item .carousel-text h2 {
-    font-size: 1.2rem;
-  }
-}
 @media only screen and (max-height: 700px) {
   .sidenav a {
     padding: 20px 15px;
-  }
-
-  .carousel-item .carousel-text p,
-.carousel-item .carousel-text h2 {
-    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 1000px) {

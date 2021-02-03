@@ -463,6 +463,19 @@ table tr td:first-child {
 	//flex-direction: row-reverse;
 }
 
+.news {
+	div {
+		width: 75%;
+	}
+	&:first-child {
+		width: 25%;
+	}
+}
+
+.caption {
+	font-style: italic;
+}
+
 .square {
 	width: 50%;
 	margin: 0;
@@ -1142,7 +1155,7 @@ a {
 	.carousel-item .carousel-text {
 		p,
 		h2 {
-			font-size: 1.2rem;
+			//font-size: 1.2rem;
 		}
 	}
 }
@@ -1155,7 +1168,7 @@ a {
 	.carousel-item .carousel-text {
 		p,
 		h2 {
-			font-size: 1rem;
+			//font-size: 1rem;
 		}
 	}
 }
