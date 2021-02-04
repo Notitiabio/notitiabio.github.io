@@ -87,22 +87,22 @@ carouselImages.forEach((item, i) => {
   imgUrls[i] = item.src;
 });
 
-function autoNext(){
-  var itemIndex = 0;
-  carouselItems.forEach((item, i) => {
-    if(item.classList.contains("active"))
-    {
-      itemIndex = i;
-    }
-  });
-  removeActiveStatus();
-  itemIndex++;
-  if(itemIndex >= itemCount)
-  {
-    itemIndex = 0;
-  }
-  addActiveStatus(itemIndex);
-}
+// function autoNext(){
+//   var itemIndex = 0;
+//   carouselItems.forEach((item, i) => {
+//     if(item.classList.contains("active"))
+//     {
+//       itemIndex = i;
+//     }
+//   });
+//   removeActiveStatus();
+//   itemIndex++;
+//   if(itemIndex >= itemCount)
+//   {
+//     itemIndex = 0;
+//   }
+//   addActiveStatus(itemIndex);
+// }
 
 
 window.addEventListener('resize',()=>{

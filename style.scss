@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto&display=swap');
+
 //colors
 $metallic-seaweed: #328490;
 $middle-blue-green: #92e0e1;
@@ -11,7 +13,8 @@ $light-gray: #e2e2e2;
 
 //typography
 
-$font: "Raleway", sans-serif;
+//$font: "Raleway", sans-serif;
+$font: "Poppins", sans-serif;
 
 $hero-font-size: 4rem;
 $header-font-size: 2.5rem;
@@ -69,7 +72,7 @@ img {
 
 .bold {
 	font-weight: 800;
-	color: white;
+	//color: white;
 }
 
 h1,
@@ -227,7 +230,7 @@ h1 {
 		padding: $square-padding;
 		h1 {
 			color: white;
-			width: 50%;
+			width: 55%;
 			text-align: left;
 		}
 	}
@@ -249,8 +252,7 @@ h1 {
 }
 
 .science-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/test-1.jpg");
 
 	height: 75vh;
 
@@ -325,14 +327,16 @@ footer {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		background: rgb(0, 0, 0, .8);
+		padding-left: 100px;
 
-		p,
-		h2 {
-			color: white;
-			width: 70%;
-			margin: 0 auto;
+		.paragraph {
 			font-size: $quote-font-size;
+			width: 50%;
+			padding-left: 30px;
+		}
+		h1 {
+			width: 100%;
+			text-align: left;
 			padding: 30px;
 			text-align: left;
 		}
@@ -346,7 +350,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: left;
 	box-shadow: $material-box-shadow;
 }
 
@@ -358,6 +362,8 @@ footer {
 	height: 100%;
 	display: flex;
 	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
 	font-size: 40px;
 	cursor: pointer;
 
@@ -524,7 +530,7 @@ table tr td:first-child {
 	}
 }
 
-.caption {
+.news-date {
 	font-style: italic;
 }
 
@@ -539,7 +545,7 @@ table tr td:first-child {
 }
 
 .square-img {
-	padding: 5px;
+	padding: 15px;
 }
 
 .paragraph {
@@ -555,6 +561,10 @@ table tr td:first-child {
 .full {
 	width: 100%;
 	padding: $square-padding;
+	text-align: center;
+}
+.center-text {
+	text-align: center;
 }
 
 .hero-text {
@@ -861,9 +871,17 @@ a {
 
 	.comparison-header {
 		width: 50%;
+		font-size: 3rem;
+
+		text-align: center;
+		img {
+			width: 250px;
+			margin-top: 52px;
+		}
 	}
 	.comparison-vs {
 		position: absolute;
+		font-size: 3rem;
 		width: 100%;
 		text-align: center;
 	}
@@ -918,7 +936,7 @@ a {
 .process-diagram {
 	display: grid;
 	//grid-template-columns: 1fr 1fr 1fr 1fr; // 1fr 1fr 1fr;
-	grid-template-columns: 30% 30% 10% 30%;
+	grid-template-columns: 32% 32% 6% 32%;
 	width: 100%;
 	justify-items: center;
 	align-items: center;
@@ -927,8 +945,8 @@ a {
 		width: 100px;
 		margin: 10px;
 	}
-	.right-justify {
-		justify-content: right;
+	.left-justify {
+		justify-content: left;
 	}
 
 	li {
@@ -1170,15 +1188,6 @@ a {
 
 		text-align: justify;
 	}
-
-	img {
-		// display: block;
-		// width: 100%;
-		// height: auto;
-	}
-}
-
-.banner-2 {
 }
 
 .banner-3 {
@@ -1186,7 +1195,6 @@ a {
 
 	h1,
 	p {
-		//color: white;
 		color: $space-cadet;
 	}
 }
@@ -1225,12 +1233,23 @@ a {
 
 .step-1 {
 	background-color: $middle-blue-green;
+
+	h2 {
+		width: 100%;
+	}
 }
 
 .step-2 {
 	background-color: $metallic-seaweed;
+	color: white;
+
+	h2 {
+		width: 100%;
+	}
 	h1,
-	p {
+	h2,
+	p,
+	div {
 		color: white;
 	}
 }
