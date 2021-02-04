@@ -23,7 +23,9 @@ $default-font-weight: 500;
 $nav-padding: 30px 15px;
 $nav-margin: 0;
 $nav-width: 150px;
-$square-padding: 3% 10%; //50px 100px;
+$top-square: 3%;
+$side-square: 10%;
+$square-padding: $top-square $side-square; //50px 100px;
 
 //other
 $border-radius: 25px;
@@ -41,7 +43,7 @@ body {
 }
 
 main {
-	margin-left: 150px;
+	//margin-left: 150px;
 }
 img {
 	max-height: 100%;
@@ -57,6 +59,11 @@ img {
 		transform: scale(.95);
 		border-radius: $border-radius;
 	}
+}
+
+.bold {
+	font-weight: 800;
+	color: white;
 }
 
 h1,
@@ -128,6 +135,16 @@ h1 {
 	align-items: center;
 	background-attachment: fixed;
 
+	.text-container {
+		width: 100%;
+		padding: $square-padding;
+		h1 {
+			color: white;
+			width: 40%;
+			text-align: left;
+		}
+	}
+
 	h1 {
 		font-size: $hero-font-size;
 		color: white;
@@ -140,15 +157,17 @@ h1 {
 .about-hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
-}
-/*
-.home-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
 
-	background-position: bottom;
+	.text-container {
+		width: 100%;
+		padding: $square-padding;
+		h1 {
+			color: white;
+			width: 40%;
+			text-align: left;
+		}
+	}
 }
-*/
 
 .general-public-hero {
 	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/salad.jpg");
@@ -222,12 +241,13 @@ h1 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
 
-	h1 {
-		color: white;
-		font-size: $hero-font-size;
-	}
 	.science-text {
 		width: 100%;
+
+		h1 {
+			color: white;
+			font-size: $hero-font-size;
+		}
 		h2 {
 			color: white;
 			font-size: $header-font-size;
@@ -407,7 +427,7 @@ table td,
 table th {
 	padding: 15px;
 	text-align: left;
-	font-size: .8rem;
+	font-size: 1rem;
 }
 table th {
 	font-weight: 700;
@@ -595,6 +615,27 @@ table tr td:first-child {
 .hamburger {
 	display: none;
 }
+//top nav
+//top nav
+//top nav
+//top nav
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 $side-square;
+
+	img {
+		width: 15%;
+		max-width: 230px;
+	}
+
+	a {
+		margin: 25px;
+		padding: 5px;
+		font-weight: 300;
+	}
+}
 
 //link animation
 //link animation
@@ -606,6 +647,7 @@ a {
 	background-size: 0% .1em;
 	transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
 	color: currentColor;
+	font-weight: 800;
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
@@ -894,6 +936,7 @@ a {
 	padding: 0;
 	img {
 		width: 400px;
+		padding: 20px;
 	}
 }
 
@@ -1164,26 +1207,12 @@ a {
 	.sidenav a {
 		padding: 20px 15px;
 	}
-
-	.carousel-item .carousel-text {
-		p,
-		h2 {
-			//font-size: 1rem;
-		}
-	}
 }
 
 @media only screen and (max-width: 1000px) {
 	.square {
 		width: 100%;
 		padding: 20px;
-	}
-
-	.carousel-item .carousel-text {
-		p,
-		h2 {
-			font-size: 1.2rem;
-		}
 	}
 }
 
@@ -1196,7 +1225,13 @@ a {
 		margin: 60% auto; /* 15% from the top and centered */
 	}
 
-	//responsive nav
+	.carousel-item .carousel-text {
+		p,
+		h2 {
+			font-size: 1.2rem;
+		}
+	}
+
 	.sidenav {
 		width: 0;
 		transition: 300ms;

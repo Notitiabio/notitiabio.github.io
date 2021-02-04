@@ -9,10 +9,6 @@ body {
   margin: 0;
 }
 
-main {
-  margin-left: 150px;
-}
-
 img {
   max-height: 100%;
   max-width: 100%;
@@ -26,6 +22,11 @@ img {
 [data-aos=shrink].aos-animate {
   transform: scale(0.95);
   border-radius: 25px;
+}
+
+.bold {
+  font-weight: 800;
+  color: white;
 }
 
 h1,
@@ -88,6 +89,15 @@ h1 {
   align-items: center;
   background-attachment: fixed;
 }
+.hero .text-container {
+  width: 100%;
+  padding: 3% 10%;
+}
+.hero .text-container h1 {
+  color: white;
+  width: 40%;
+  text-align: left;
+}
 .hero h1 {
   font-size: 4rem;
   color: white;
@@ -99,15 +109,16 @@ h1 {
 .about-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
 }
-
-/*
-.home-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("images/kal-visuals-aK4iPNYipnU-unsplash.jpg");
-
-	background-position: bottom;
+.about-hero .text-container {
+  width: 100%;
+  padding: 3% 10%;
 }
-*/
+.about-hero .text-container h1 {
+  color: white;
+  width: 40%;
+  text-align: left;
+}
+
 .general-public-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/salad.jpg");
 }
@@ -172,12 +183,12 @@ h1 {
 .science-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
 }
-.science-hero h1 {
-  color: white;
-  font-size: 4rem;
-}
 .science-hero .science-text {
   width: 100%;
+}
+.science-hero .science-text h1 {
+  color: white;
+  font-size: 4rem;
 }
 .science-hero .science-text h2 {
   color: white;
@@ -339,7 +350,7 @@ table td,
 table th {
   padding: 15px;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 table th {
@@ -511,6 +522,22 @@ table tr td:first-child {
   display: none;
 }
 
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.top-nav img {
+  width: 15%;
+  max-width: 230px;
+}
+.top-nav a {
+  margin: 25px;
+  padding: 5px;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
@@ -519,6 +546,7 @@ a {
   background-size: 0% 0.1em;
   transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
   color: currentColor;
+  font-weight: 800;
 }
 a:hover {
   cursor: pointer;
@@ -797,6 +825,7 @@ a:active {
 }
 .science-zhao img {
   width: 400px;
+  padding: 20px;
 }
 
 .pipeline {
@@ -1044,11 +1073,6 @@ a:active {
     width: 100%;
     padding: 20px;
   }
-
-  .carousel-item .carousel-text p,
-.carousel-item .carousel-text h2 {
-    font-size: 1.2rem;
-  }
 }
 @media only screen and (max-width: 700px) {
   .hero h1 {
@@ -1058,6 +1082,11 @@ a:active {
   .person-modal-content {
     margin: 60% auto;
     /* 15% from the top and centered */
+  }
+
+  .carousel-item .carousel-text p,
+.carousel-item .carousel-text h2 {
+    font-size: 1.2rem;
   }
 
   .sidenav {
