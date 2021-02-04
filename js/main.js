@@ -35,13 +35,20 @@ $(document).ready(function () {
   //open  nav
   $(".hamburger").click(function() {
 
-    if($(".sidenav").css("width") == "0px"){
-      $(".sidenav").css("width", "150px");
-      $("main").css("margin-left", "150px");
+    // if($(".sidenav").css("width") == "0px"){
+    //   $(".sidenav").css("width", "150px");
+    //   $("main").css("margin-left", "150px");
+    // }
+    // else {
+    //   $(".sidenav").css("width", "0px");
+    //   $("main").css("margin-left", "0px");
+    // }
+
+    if($(".top-nav").css("top") != "0px") {
+      $(".top-nav").css("top", "0px");
     }
     else {
-      $(".sidenav").css("width", "0px");
-      $("main").css("margin-left", "0px");
+      $(".top-nav").css("top", "-300px");
     }
   });
   
