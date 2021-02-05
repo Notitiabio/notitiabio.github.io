@@ -6,6 +6,10 @@
   color: #1d294d;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0;
 }
@@ -918,71 +922,38 @@ a:active {
 }
 
 .pipeline {
-  width: 80%;
-  margin: 50px auto;
+  width: 100%;
+  margin: 0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 20px;
 }
 .pipeline h4 {
   text-align: left;
 }
-
-.progress {
+.pipeline .progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 2rem;
+  height: 6rem;
   overflow: hidden;
-  border-radius: 25px;
   transition: 300ms;
   width: 100%;
+  padding: 20px;
+  text-align: center;
 }
-.progress:hover {
-  height: 2.5rem;
-  transition: 300ms;
-  cursor: pointer;
-}
-
-.progress-expand {
-  display: none;
-}
-
-.pipe-1 {
-  background-color: #1d294d;
-}
-.pipe-1:after {
-  content: "Pre-Clinical";
-}
-
-.pipe-2 {
-  background-color: #328490;
-}
-.pipe-2:after {
-  content: "Phase 1";
-}
-
-.pipe-3 {
+.pipeline .progress .complete {
   background-color: #92e0e1;
-  color: #1d294d;
 }
-.pipe-3:after {
-  content: "Phase 2";
+.pipeline .progress .in-progress {
+  background: linear-gradient(to right, #92e0e1 0%, #92e0e1 50%, #e2e2e2 50%, #e2e2e2 100%);
 }
-
-.pipe-4 {
-  background-color: #1d294d;
+.pipeline .progress .not-complete {
+  background-color: #e2e2e2;
 }
-.pipe-4:after {
-  content: "Phase 3";
+.pipeline .progress .end-bar {
+  border-radius: 0 5px 5px 0;
 }
-
-.pipe-gray {
-  background-color: #1d294d;
-  color: white;
-  opacity: 20%;
-}
-
-.progress-bar {
+.pipeline .progress .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -993,66 +964,15 @@ a:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
   transition: width 0.6s ease;
-  color: white;
-  margin-right: 2px;
-  margin-left: 2px;
-  width: 25%;
+  width: 12%;
 }
-
-.pipeline-container {
-  width: 100%;
-  margin: 50px auto;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  padding: 20px;
-}
-.pipeline-container h4 {
+.pipeline .progress .condition {
+  width: 32%;
   text-align: left;
 }
-
-.condition-bar,
-.small-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  transition: width 0.6s ease;
-  color: white;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.progress-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 4rem;
-  overflow: hidden;
-  transition: 300ms;
-  width: 100%;
-  background-color: #1d294d;
-  color: white;
-}
-.progress-header:hover {
-  height: 2.5rem;
-  transition: 300ms;
-  cursor: pointer;
-}
-
-.condition-bar {
-  width: 30%;
-}
-
-.small-bar {
-  width: 10%;
+.pipeline .progress-title {
+  font-size: calc(.5rem + .5vw);
 }
 
 .frame {
