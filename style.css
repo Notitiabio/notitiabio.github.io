@@ -470,11 +470,6 @@ table tr td:first-child {
   padding: 15px;
 }
 
-.paragraph {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .third {
   width: 30%;
   margin: 0;
