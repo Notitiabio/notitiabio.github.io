@@ -549,11 +549,6 @@ table tr td:first-child {
 	padding: 15px;
 }
 
-.paragraph {
-	// text-align: justify;
-	// text-justify: inter-word;
-}
-
 .third {
 	width: 30%;
 	margin: 0;
@@ -1096,6 +1091,22 @@ a {
 			width: 12%;
 		}
 
+		.thick-bar {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			transition: width .6s ease;
+			background: red;
+			width: 50%;
+		}
+
 		.condition {
 			width: 32%;
 			text-align: left;
@@ -1211,10 +1222,11 @@ a {
 .frame {
 	box-shadow: $material-box-shadow;
 	padding: $square-padding;
-	p {
+	p,
+	li {
 		font-size: $quote-font-size;
 
-		text-align: justify;
+		//text-align: justify;
 	}
 }
 
