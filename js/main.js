@@ -21,36 +21,35 @@ $(document).ready(function () {
     });
   }
 
-  // expanded progress bar info 
-  $('.progress').click(function () {
-
-    if ($(this).next().css("display") == "none") {
-      $(this).next().css("display", "block");
-    }
-    else {
-      $(this).next().css("display", "none");
-    }
-  });
-
   //open  nav
   $(".hamburger").click(function() {
-
-    // if($(".sidenav").css("width") == "0px"){
-    //   $(".sidenav").css("width", "150px");
-    //   $("main").css("margin-left", "150px");
-    // }
-    // else {
-    //   $(".sidenav").css("width", "0px");
-    //   $("main").css("margin-left", "0px");
-    // }
 
     if($(".top-nav").css("top") != "0px") {
       $(".top-nav").css("top", "0px");
     }
     else {
-      $(".top-nav").css("top", "-300px");
+      $(".top-nav").css("top", "-500px");
     }
   });
+
+  //open nav dropdown
+  $(".dropdown").click(function() {
+    $(".dropdown-content").css("display", "block");
+  });
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown')) {
+      $(".dropdown-content").css("display", "none");
+      // var dropdowns = document.getElementsByClassName("dropdown-content");
+      // var i;
+      // for (i = 0; i < dropdowns.length; i++) {
+      //   var openDropdown = dropdowns[i];
+      //   if (openDropdown.classList.contains('show')) {
+      //     openDropdown.classList.remove('show');
+      //   }
+      // }
+    }
+  }
+
   
  document.addEventListener('aos:in:custom', ({ detail }) => {
   console.log('animated in', detail);
@@ -86,23 +85,6 @@ var indicatorWidth = indicatorUlWidth/(itemCount+1.5);
 carouselImages.forEach((item, i) => {
   imgUrls[i] = item.src;
 });
-
-// function autoNext(){
-//   var itemIndex = 0;
-//   carouselItems.forEach((item, i) => {
-//     if(item.classList.contains("active"))
-//     {
-//       itemIndex = i;
-//     }
-//   });
-//   removeActiveStatus();
-//   itemIndex++;
-//   if(itemIndex >= itemCount)
-//   {
-//     itemIndex = 0;
-//   }
-//   addActiveStatus(itemIndex);
-// }
 
 
 window.addEventListener('resize',()=>{
@@ -171,6 +153,16 @@ function addActiveStatus(target){
 }
 
 });
+
+// //require captcha 
+// $("form").submit(function(event) {
+
+//   var recaptcha = $("#g-recaptcha-response").val();
+//   if (recaptcha === "") {
+//      event.preventDefault();
+//      alert("Please check the recaptcha");
+//   }
+// });
 
 //  http://api.edamam.com/auto-complete?q=rou&limit=10&app_id=$90aa6a3e&app_key=$24f01456634cdf030a22c0e6bb73f0a3
 

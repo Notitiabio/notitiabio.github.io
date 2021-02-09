@@ -14,8 +14,6 @@
     <link rel="icon" href="images/small-logo.png" type="image/png">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/5d869ca34c.js" crossorigin="anonymous"></script>
-
 
 </head>
 
@@ -29,7 +27,14 @@
         <img src="images/Original.svg" alt="notitia logo">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="science.html">Our Science</a>
+        <div class="dropdown" id="hide-mobile">Our Science
+            <div class="dropdown-content">
+                <a href="pillars.html">The Four Pillars</a>
+                <a href="platform.html">Our Platform</a>
+            </div>
+        </div>
+        <a class="show-mobile" href="pillars.html">The Four Pillars</a>
+        <a class="show-mobile" href="platform.html">Our Platform</a> 
         <a href="general-public.html">General Public</a>
         <a href="patients.html">Patients</a>
         <a href="investors.html" class="active">Investors & News</a>
@@ -41,72 +46,79 @@
             <h1>Investors & News</h1>
         </div>
     </section>
-<div class="gutter"></div>
+    <div class="gutter"></div>
 
-<section class="frame grid banner-2" id="superorganism" data-aos="shrink">
-    <div class="full quote">
-        Stay Up to Date with Notitia's Latest Clinical Trials and Other Developments 
-    </div>
-</section>
+    <section class="frame grid banner-2" id="superorganism" data-aos="shrink">
+        <div class="full quote">
+            Stay Up to Date with Notitia's Latest Clinical Trials and Other Developments
+        </div>
+    </section>
 
-<div class="gutter"></div>
+    <div class="gutter"></div>
     <section class="frame step-1" data-aos="shrink">
         <div>
-            <h1>Notitia Biotechnologies Receives Approval from FDA for Phase 2a Clinical Trial in Diabetic & Prediabetic Patients
+            <h1>Notitia Biotechnologies Receives Approval from FDA for Phase 2a Clinical Trial in Diabetic & Prediabetic
+                Patients
             </h1>
             <div class="news-date">August 14, 2020</div>
             <p>
-                Notitia Biotechnologies Company has received the Investigational New Drug (IND) approval from the FDA for NBT-NM108, a proprietary formula designed to support the Foundation Guild bacteria in the patient's gut microbiome. The FDA has allowed Notitia to test the drug as a treatment for COVID-19 in patients with type 2 diabetes and prediabetes. Notitia has secured funding for a Phase 2a randomized, controlled clinical trial, and the study will be performed in the Tampa Florida area. Enrollment is expected to begin by October, and further information regarding the study is available on <a href="clinicaltrials.gov">clinicaltrials.gov.</a>
+                Notitia Biotechnologies Company has received the Investigational New Drug (IND) approval from the FDA
+                for NBT-NM108, a proprietary formula designed to support the Foundation Guild bacteria in the patient's
+                gut microbiome. The FDA has allowed Notitia to test the drug as a treatment for COVID-19 in patients
+                with type 2 diabetes and prediabetes. Notitia has secured funding for a Phase 2a randomized, controlled
+                clinical trial, and the study will be performed in the Tampa Florida area. Enrollment is expected to
+                begin by October, and further information regarding the study is available on <a
+                    href="clinicaltrials.gov">clinicaltrials.gov.</a>
                 <br><br>
-                For more information regarding Notitia's Foundation Guild Microbiome R&D Platform, please click <a href="science.html">here.</a> For more information about the NBT-NM108's development pipeline, please click <a href="patients.html">here.</a> 
+                For more information regarding Notitia's Foundation Guild Microbiome R&D Platform, please click <a
+                    href="science.html">here.</a> For more information about the NBT-NM108's development pipeline,
+                please click <a href="patients.html">here.</a>
 
             </p>
-        </div> 
+        </div>
     </section>
     <div class="gutter"></div>
     <section class="frame step-2" data-aos="shrink">
         <div>
-            <h1>Notitia Biotechnologies Develops Revolutionary Foundation Guild LBP for Patients with Diabetic Kidney Disease (DKD)
+            <h1>Notitia Biotechnologies Develops Revolutionary Foundation Guild LBP for Patients with Diabetic Kidney
+                Disease (DKD)
             </h1>
             <div class="news-date">June 24, 2020
             </div>
             <p>
-                Notitia Biotechnologies Company has developed a ground-breaking live biotherapeutic product (LBP) for patients with early-stage and end-stage diabetic kidney disease (DKD) patients. The drug, NBT-LP306, combines the purified Foundation Guild bacteria and the tailored microbiome nutrition to support their growth in one convenient format.
+                Notitia Biotechnologies Company has developed a ground-breaking live biotherapeutic product (LBP) for
+                patients with early-stage and end-stage diabetic kidney disease (DKD) patients. The drug, NBT-LP306,
+                combines the purified Foundation Guild bacteria and the tailored microbiome nutrition to support their
+                growth in one convenient format.
 
                 <br><br>
-                Notitia is preparing the Investigational New Drug (IND) application to the FDA to start a Phase 1/2 combined clinical trial in Q1 2021. For more information regarding Notitia's Foundation Guild Microbiome R&D Platform, please click <a href="science.html">here.</a> For more information about the NBT-LP306's development pipeline, please click <a href="patients.html">here.</a>  
+                Notitia is preparing the Investigational New Drug (IND) application to the FDA to start a Phase 1/2
+                combined clinical trial in Q1 2021. For more information regarding Notitia's Foundation Guild Microbiome
+                R&D Platform, please click <a href="science.html">here.</a> For more information about the NBT-LP306's
+                development pipeline, please click <a href="patients.html">here.</a>
             </p>
-        </div> 
+        </div>
     </section>
 
-        <!-- The Modal -->
-        <div id="contact-us-modal" class="modal">
-            <!-- Modal content -->
-            <div class="contact-modal-content">
-                <form class="contact" action="https://submit-form.com/kguz4w2C" target="_self"> 
-                    <!-- <form class="contact" action="https://usebasin.com/f/568c9b065574" target="_self"> -->
-                    <span class="close">&times;</span>
-                    <h1>Contact Us</h1>               
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Phone</label><br>
-                    <input type="number" id="phone" name="phone">
-    
-                    <label for="message">Message</label><br>
-                    <textarea type="text" id="message" name="message"></textarea>
-    
-                    <form action="?" method="POST">
-                        <div class="g-recaptcha" data-sitekey="6LeHPDYaAAAAAI_xDWPLq2cwYnbhD6i-69OWOSuw
-                        "></div>
-                        <br/>
-                        <input type="submit" value="Submit">
-                      </form>
-                    <input type="submit">
-                </form>
-            </div>
+    <div id="contact-us-modal" class="modal">
+        <div class="contact-modal-content">
+            <form class="contact" action="https://formspree.io/f/xqkgjjzv" method="POST">
+                <span class="close">&times;</span>
+                <h1>Contact Us</h1>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone</label><br>
+                <input type="number" id="phone" name="phone">
+
+                <label for="message">Message</label><br>
+                <textarea type="text" id="message" name="message"></textarea>
+
+                <input type="submit">
+            </form>
         </div>
+    </div>
     <footer>
         Copyright &copy; 2021 Notitia Biotechnologies. All Rights Reserved.
     </footer>
