@@ -1060,11 +1060,12 @@ a,
 @media only screen and (max-width: 700px) {
 	.top-nav {
 		display: block;
-		position: absolute;
-		top: -500px;
+		position: fixed;
+		right: -500px;
 		background-color: white;
 		width: 100%;
 		transition: 300ms;
+		z-index: 999;
 
 		img {
 			display: none;

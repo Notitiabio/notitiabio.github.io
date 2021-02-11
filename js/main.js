@@ -24,11 +24,11 @@ $(document).ready(function () {
   //open  nav
   $(".hamburger").click(function() {
 
-    if($(".top-nav").css("top") != "0px") {
-      $(".top-nav").css("top", "0px");
+    if($(".top-nav").css("right") != "0px") {
+      $(".top-nav").css("right", "0px");
     }
     else {
-      $(".top-nav").css("top", "-500px");
+      $(".top-nav").css("right", "-500px");
     }
   });
 
