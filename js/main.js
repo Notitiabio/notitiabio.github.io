@@ -8,6 +8,8 @@ $(document).ready(function () {
     toggleModal(event);
   });
   $('.contact-us').click(function(event) {
+    // $(".modal").addClass("is-active");
+    // $("html").addClass("is-clipped");
     toggleModal(event);
   });
 
@@ -28,7 +30,7 @@ $(document).ready(function () {
       $(".top-nav").css("right", "0px");
     }
     else {
-      $(".top-nav").css("right", "-500px");
+      $(".top-nav").css("right", "-1000px");
     }
   });
 
@@ -48,7 +50,13 @@ $(document).ready(function () {
       //   }
       // }
     }
+    if($(".top-nav").css("right") == "0px") {
+      $(".top-nav").css("right", "-1000px");
+    }
   }
+
+  //open modal
+
 
   
  document.addEventListener('aos:in:custom', ({ detail }) => {
