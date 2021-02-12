@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto&display=swap");
 * {
   font-family: "Poppins", sans-serif;
@@ -27,7 +26,7 @@ img {
 [data-aos=shrink] {
   transform: scale(1);
   border-radius: 0;
-  transition-property: transform, 25px;
+  transition-property: transform, border-radius;
 }
 [data-aos=shrink].aos-animate {
   transform: scale(0.95);
@@ -436,7 +435,7 @@ footer {
   display: none;
 }
 .top-nav #hide-mobile {
-  display: static;
+  display: block;
 }
 
 a,
