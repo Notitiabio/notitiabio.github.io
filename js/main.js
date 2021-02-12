@@ -8,8 +8,6 @@ $(document).ready(function () {
     toggleModal(event);
   });
   $('.contact-us').click(function(event) {
-    // $(".modal").addClass("is-active");
-    // $("html").addClass("is-clipped");
     toggleModal(event);
   });
 
@@ -41,34 +39,12 @@ $(document).ready(function () {
   window.onclick = function(event) {
     if (!event.target.matches('.dropdown')) {
       $(".dropdown-content").css("display", "none");
-      // var dropdowns = document.getElementsByClassName("dropdown-content");
-      // var i;
-      // for (i = 0; i < dropdowns.length; i++) {
-      //   var openDropdown = dropdowns[i];
-      //   if (openDropdown.classList.contains('show')) {
-      //     openDropdown.classList.remove('show');
-      //   }
-      // }
     }
     if($(".top-nav").css("right") == "0px") {
       $(".top-nav").css("right", "-1000px");
     }
   }
 
-  //open modal
-
-
-  
- document.addEventListener('aos:in:custom', ({ detail }) => {
-  console.log('animated in', detail);
-  transform: scale(.5);  
-  //$("kid").css("width", "90%");
-});
-
-document.addEventListener('aos:out:custom', ({ detail }) => {
-  console.log('animated out', detail);
-  $("kid").css("width", "100%");
-});
 
 //carousel
 //carousel

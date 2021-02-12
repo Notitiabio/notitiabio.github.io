@@ -48,7 +48,7 @@ h5 {
 }
 
 h1 {
-  font-size: calc(22px + 2vw);
+  font-size: calc(12px + 3vw);
 }
 
 .phd {
@@ -526,7 +526,7 @@ a:active,
 .contact input[type=submit] {
   background-color: #ebb992;
   width: 50%;
-  font-size: calc(22px + 2vw);
+  font-size: calc(12px + 3vw);
   color: white;
   float: right;
 }
@@ -607,7 +607,7 @@ a:active,
 .person-modal-content h1,
 .contact-modal-content h1 {
   width: 100%;
-  font-size: calc(22px + 2vw);
+  font-size: calc(12px + 3vw);
   margin: 0;
 }
 .person-modal-content .img-container,
@@ -833,7 +833,7 @@ a:active,
 .banner-6 a {
   border-radius: 25px;
   border: none;
-  font-size: calc(22px + 2vw);
+  font-size: calc(12px + 3vw);
   width: 44%;
   background-color: white;
   text-align: center;
