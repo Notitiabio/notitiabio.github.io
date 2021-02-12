@@ -131,8 +131,7 @@ h1 {
 }
 
 .about-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("images/viktor-krc-E7qSsgMsXyA-unsplash.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/about-hero.webp");
 }
 
 .general-public-hero {
@@ -145,7 +144,7 @@ h1 {
 }
 
 .home-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/story-desktop.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/home-hero.webp");
 	background-position: bottom;
 
 	.text-container h1 {
@@ -158,8 +157,7 @@ h1 {
 }
 
 .patients-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("images/gel-capsules-5834023_1920.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/patient-hero.webp");
 
 	.text-container {
 		h1 {
@@ -170,7 +168,7 @@ h1 {
 }
 
 .investors-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.webp");
 	background-position: bottom;
 }
 
@@ -179,12 +177,7 @@ h1 {
 }
 
 .platform-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/test-1.jpg");
-}
-
-.pipeline-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("images/chromatograph-MWnm1fSYXN4-unsplash.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/platform-hero.webp");
 }
 
 .logo {

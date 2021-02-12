@@ -9,7 +9,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 153;
 
-const currentFrame = index => (`images/video/every-other/frame-${index.toString().padStart(3, '0')}.jpg`);
+const currentFrame = index => (`images/video/every-other/frame-${index.toString().padStart(3, '0')}.webp`);
 
 
 const preloadImages = () => {
