@@ -1,1 +1,0 @@
-for file in *.webp ; do cwebp -q 50 "$file" -o "${file%.webp}.webp"; done

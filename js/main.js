@@ -21,6 +21,8 @@ $(document).ready(function () {
     });
   }
 
+  
+
   //open  nav
   $(".hamburger").click(function() {
 
