@@ -166,7 +166,7 @@ footer {
   padding-left: 60px;
 }
 .carousel-item .carousel-text .paragraph {
-  font-size: calc(8px + 1vw);
+  font-size: calc(10px + 1vw);
   width: 50%;
 }
 .carousel-item .carousel-text h2 {
@@ -366,7 +366,7 @@ footer {
 }
 
 .quote {
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
   text-align: center;
 }
 
@@ -502,7 +502,7 @@ a:active,
   padding: 3%;
 }
 .contact label {
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
 }
 .contact input,
 .contact textarea {
@@ -548,7 +548,7 @@ a:active,
   background-color: #ebb992;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
   right: 2%;
   bottom: 2%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -626,7 +626,7 @@ a:active,
 .modal .person-modal-content li,
 .modal .contact-modal-content li {
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
 }
 .modal .definition-modal-content {
   background-color: white;
@@ -644,7 +644,7 @@ a:active,
 }
 
 .definition-text {
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
   text-align: center;
   padding: 3%;
   width: 85%;
@@ -688,7 +688,7 @@ a:active,
 .comparison .comparison-item {
   width: 50%;
   padding: 3%;
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
 }
 .comparison .comparison-item ul {
   padding: 0;
@@ -810,7 +810,7 @@ a:active,
 }
 .frame p,
 .frame li {
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
 }
 
 .pillar-img {
@@ -942,6 +942,11 @@ a:active,
   background-color: white;
 }
 
+.blue-line {
+  width: 100%;
+  border-bottom: 2px solid #92e0e1;
+}
+
 @media only screen and (max-width: 1000px) {
   .square,
 .square-img {
@@ -965,15 +970,33 @@ a:active,
     position: static;
   }
 
-  .modal .person-modal-content .img-container {
-    width: 70%;
-  }
-  .modal .person-modal-content .bio {
+  .modal .person-modal-content,
+.modal .contact-modal-content {
     width: 100%;
   }
-  .modal .person-modal-content .bio h1 {
+  .modal .person-modal-content .img-container,
+.modal .contact-modal-content .img-container {
+    width: 70%;
+  }
+  .modal .person-modal-content .close,
+.modal .contact-modal-content .close {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .modal .person-modal-content .bio,
+.modal .contact-modal-content .bio {
+    width: 100%;
+  }
+  .modal .person-modal-content .bio h1,
+.modal .contact-modal-content .bio h1 {
     text-align: center;
     padding: 0;
+  }
+
+  .half {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 700px) {

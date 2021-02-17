@@ -17,7 +17,8 @@ $font: "Poppins", sans-serif;
 $hero-font-size: calc(16px + 3vw);
 //$header-font-size: 2.5rem;
 $header-font-size: calc(12px + 3vw);
-$quote-font-size: 1.5rem;
+//$quote-font-size: 1.5rem;
+$quote-font-size: calc(12px + 1vw);
 $text-shadow: 0 2px 2px rgba(0, 0, 0, .5); //can i use same box shadow
 $default-font-weight: 500;
 
@@ -218,7 +219,7 @@ footer {
 		padding-left: 60px;
 
 		.paragraph {
-			font-size: calc(8px + 1vw);
+			font-size: calc(10px + 1vw);
 			width: 50%;
 		}
 		h2 {
@@ -578,6 +579,7 @@ a,
 	background-color: $middle-blue-green;
 	border-radius: $border-radius;
 	padding: $square-padding;
+
 	label {
 		font-size: $quote-font-size;
 	}
@@ -1047,6 +1049,10 @@ a,
 	height: 50px;
 	background-color: white;
 }
+.blue-line {
+	width: 100%;
+	border-bottom: 2px solid $middle-blue-green;
+}
 
 @media only screen and (max-width: 1000px) {
 	.square,
@@ -1073,17 +1079,30 @@ a,
 			position: static;
 		}
 	}
-	.modal .person-modal-content {
-		.img-container {
-			width: 70%;
-		}
-		.bio {
+	.modal {
+		.person-modal-content,
+		.contact-modal-content {
 			width: 100%;
-			h1 {
-				text-align: center;
+			.img-container {
+				width: 70%;
+			}
+			.close {
+				position: static;
+				width: 100%;
+				margin: 0;
 				padding: 0;
 			}
+			.bio {
+				width: 100%;
+				h1 {
+					text-align: center;
+					padding: 0;
+				}
+			}
 		}
+	}
+	.half {
+		width: 100%;
 	}
 }
 
