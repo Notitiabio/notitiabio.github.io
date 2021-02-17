@@ -38,6 +38,7 @@ $(document).ready(function () {
   $(".dropdown").click(function() {
     $(".dropdown-content").css("display", "block");
   });
+  
   window.onclick = function(event) {
     if (!event.target.matches('.dropdown')) {
       $(".dropdown-content").css("display", "none");

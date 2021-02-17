@@ -415,7 +415,7 @@ footer {
   margin: 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 1;
-  top: 110px;
+  top: 85px;
 }
 .top-nav .dropdown .dropdown-content a {
   padding: 30px 15px;
@@ -579,9 +579,8 @@ a:active,
   /* Black w/ opacity */
   overflow: auto;
 }
-
-.person-modal-content,
-.contact-modal-content {
+.modal .person-modal-content,
+.modal .contact-modal-content {
   background-color: white;
   margin: 2% auto;
   /* 15% from the top and centered */
@@ -592,42 +591,71 @@ a:active,
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  min-height: 400px;
-  min-width: 300px;
   justify-content: space-evenly;
-  align-items: center;
 }
-.person-modal-content h1,
-.contact-modal-content h1 {
-  width: 100%;
+.modal .person-modal-content h1,
+.modal .contact-modal-content h1 {
   font-size: calc(12px + 3vw);
+  text-align: left;
+  padding-left: 60px;
 }
-.person-modal-content .img-container,
-.contact-modal-content .img-container {
+.modal .person-modal-content .img-container,
+.modal .contact-modal-content .img-container {
   width: 30%;
+  padding: 3%;
 }
-.person-modal-content ul,
-.person-modal-content p,
-.contact-modal-content ul,
-.contact-modal-content p {
-  margin: 20px;
+.modal .person-modal-content .close,
+.modal .contact-modal-content .close {
+  padding-right: 20px;
+  margin-bottom: 75px;
+  position: absolute;
+  right: 15%;
+  top: 3%;
+}
+.modal .person-modal-content .bio,
+.modal .contact-modal-content .bio {
+  width: 70%;
+  padding: 3%;
+}
+.modal .person-modal-content ul,
+.modal .person-modal-content p,
+.modal .contact-modal-content ul,
+.modal .contact-modal-content p {
   width: 100%;
 }
-.person-modal-content li,
-.contact-modal-content li {
+.modal .person-modal-content li,
+.modal .contact-modal-content li {
   padding: 20px;
   font-size: 1.5rem;
+}
+.modal .definition-modal-content {
+  background-color: white;
+  margin: 2% auto;
+  /* 15% from the top and centered */
+  padding: 3%;
+  width: 75%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.definition-text {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 3%;
+  width: 85%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #707070;
   font-size: 4rem;
   font-weight: bold;
-  width: 100%;
-  text-align: right;
-  padding-right: 20px;
+  text-align: center;
 }
 
 .close:hover,
@@ -935,6 +963,17 @@ a:active,
   }
   .comparison .comparison-vs {
     position: static;
+  }
+
+  .modal .person-modal-content .img-container {
+    width: 70%;
+  }
+  .modal .person-modal-content .bio {
+    width: 100%;
+  }
+  .modal .person-modal-content .bio h1 {
+    text-align: center;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 700px) {
