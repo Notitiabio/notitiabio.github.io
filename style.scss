@@ -70,11 +70,6 @@ img {
 	}
 }
 
-.bold {
-	font-weight: 800;
-	//color: white;
-}
-
 h1,
 h2,
 h3,
@@ -216,16 +211,25 @@ footer {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		padding-left: 60px;
+		padding: 0 60px;
+		background-color: rgba(0, 0, 0, .5);
+		height: 100%;
 
 		.paragraph {
-			font-size: calc(10px + 1vw);
-			width: 50%;
+			font-size: calc(8px + 1vw + 1vh);
+			width: 100%;
+			height: 50%;
+			overflow: auto;
 		}
-		h2 {
+		h1 {
 			width: 100%;
 			text-align: left;
-			text-align: left;
+		}
+		.paragraph,
+		h1,
+		strong {
+			color: white;
+			text-shadow: $text-shadow;
 		}
 	}
 }
@@ -775,9 +779,6 @@ a,
 			text-align: left;
 		}
 	}
-
-	ul li {
-	}
 }
 
 .seaweed-text {
@@ -823,6 +824,23 @@ a,
 	}
 }
 
+.read-more {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 900px;
+	margin: 0 auto;
+
+	h1 {
+		width: 100%;
+	}
+	a {
+		width: 25%;
+		padding: 10px;
+	}
+}
+
 //pipeline
 //pipeline
 //pipeline
@@ -848,7 +866,7 @@ a,
 		width: 100%;
 		padding: 20px;
 		text-align: center;
-		margin-bottom: 75px;
+		margin-bottom: 50px;
 
 		.progress-bar {
 			display: -webkit-box;
@@ -863,6 +881,11 @@ a,
 			justify-content: center;
 			transition: width .6s ease;
 			width: 10%;
+		}
+
+		.condition {
+			width: 50%;
+			text-align: left;
 		}
 
 		.bar-10,
@@ -890,14 +913,10 @@ a,
 		.bar-30 {
 			width: 30%;
 		}
-
-		.condition {
-			width: 40%;
-			text-align: left;
-		}
 	}
 	.progress-title {
 		font-size: calc(.5rem + .5vw);
+		font-weight: bold;
 	}
 }
 
@@ -1049,10 +1068,6 @@ a,
 	height: 50px;
 	background-color: white;
 }
-.blue-line {
-	width: 100%;
-	border-bottom: 2px solid $middle-blue-green;
-}
 
 @media only screen and (max-width: 1000px) {
 	.square,
@@ -1066,7 +1081,7 @@ a,
 	.top-nav {
 		padding: 0 10px;
 		a {
-			margin: 15px;
+			margin: 25px 5px;
 		}
 	}
 
@@ -1104,11 +1119,15 @@ a,
 	.half {
 		width: 100%;
 	}
+
+	.read-more a {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
 	.carousel-item .carousel-text .paragraph {
-		width: 80%;
+		height: 80%;
 	}
 	.top-nav {
 		display: block;
@@ -1117,6 +1136,7 @@ a,
 		background-color: white;
 		width: 100%;
 		transition: 300ms;
+
 		z-index: 999;
 
 		img {
