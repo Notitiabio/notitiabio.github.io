@@ -103,21 +103,8 @@ h1 {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.about-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.jpg");
-  min-height: 50vh;
-}
-
-.general-public-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/test.jpg");
-}
-.general-public-hero .text-container h1 {
-  width: 50%;
-  text-align: left;
-}
-
 .home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/home-hero.webp");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/home-hero.webp");
   background-position: bottom;
 }
 .home-hero .text-container h1 {
@@ -128,8 +115,21 @@ h1 {
   color: #92e0e1;
 }
 
+.about-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.webp");
+  min-height: 50vh;
+}
+
+.general-public-hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/general-public-hero.webp");
+}
+.general-public-hero .text-container h1 {
+  width: 50%;
+  text-align: left;
+}
+
 .patients-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/patient-hero.webp");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/patient-hero.webp");
 }
 .patients-hero .text-container h1 {
   width: 55%;
@@ -143,7 +143,7 @@ h1 {
 }
 
 .pillar-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pillar.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pillar.webp");
 }
 
 .platform-hero {
@@ -228,15 +228,19 @@ footer {
 }
 .carousel-control-prev .fas,
 .carousel-control-next .fas {
-  background-color: rgba(146, 224, 225, 0.8);
+  background: #328490;
   color: #e2e2e2;
   padding: 20px 10px;
   transition: 300ms;
 }
 .carousel-control-prev .fas:hover,
 .carousel-control-next .fas:hover {
-  background-color: #92e0e1;
+  background: #183f44;
   transition: 300ms;
+}
+.carousel-control-prev .fas:active,
+.carousel-control-next .fas:active {
+  transform: scale(1.2);
 }
 
 .carousel-control-prev {
@@ -640,10 +644,9 @@ a:active,
 .modal .person-modal-content .close,
 .modal .contact-modal-content .close {
   padding-right: 20px;
-  margin-bottom: 75px;
   position: absolute;
   right: 15%;
-  top: 3%;
+  top: 5%;
 }
 .modal .person-modal-content .bio,
 .modal .contact-modal-content .bio {
@@ -698,6 +701,10 @@ a:active,
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
+}
+.close:active {
+  font-size: 4.5rem;
+  transition: 300ms;
 }
 
 .close:hover,
@@ -904,9 +911,16 @@ a:active,
 
 .pillar-img {
   display: block;
-  width: 50%;
+  width: 35%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.sixty-percent {
+  width: 60%;
 }
 
 .float-left {
@@ -960,7 +974,7 @@ a:active,
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 900px;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding: 20px;
 }

@@ -15,9 +15,7 @@ $light-gray: #e2e2e2;
 $font: "Poppins", sans-serif;
 
 $hero-font-size: calc(16px + 3vw);
-//$header-font-size: 2.5rem;
 $header-font-size: calc(12px + 3vw);
-//$quote-font-size: 1.5rem;
 $quote-font-size: calc(12px + 1vw);
 $text-shadow: 0 2px 2px rgba(0, 0, 0, .5); //can i use same box shadow
 $default-font-weight: 500;
@@ -146,22 +144,8 @@ h1 {
 	}
 }
 
-.about-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.jpg");
-	min-height: 50vh;
-}
-
-.general-public-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/test.jpg");
-
-	.text-container h1 {
-		width: 50%;
-		text-align: left;
-	}
-}
-
 .home-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/home-hero.webp");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("images/home-hero.webp");
 	background-position: bottom;
 
 	.text-container h1 {
@@ -173,8 +157,23 @@ h1 {
 	}
 }
 
+.about-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.webp");
+	min-height: 50vh;
+}
+
+.general-public-hero {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)),
+		url("images/general-public-hero.webp");
+
+	.text-container h1 {
+		width: 50%;
+		text-align: left;
+	}
+}
+
 .patients-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/patient-hero.webp");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/patient-hero.webp");
 
 	.text-container {
 		h1 {
@@ -191,7 +190,7 @@ h1 {
 }
 
 .pillar-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pillar.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pillar.webp");
 }
 
 .platform-hero {
@@ -279,14 +278,18 @@ footer {
 	cursor: pointer;
 
 	.fas {
-		background-color: rgb(146, 224, 225, .8);
+		//background-color: rgb(146, 224, 225, .8);
+		background: $metallic-seaweed;
 		color: #e2e2e2;
 		padding: 20px 10px;
 		transition: 300ms;
 
 		&:hover {
-			background-color: rgb(146, 224, 225, 1);
+			background: darken($metallic-seaweed, 20%);
 			transition: 300ms;
+		}
+		&:active {
+			transform: scale(1.2);
 		}
 	}
 }
@@ -712,10 +715,10 @@ a,
 		}
 		.close {
 			padding-right: 20px;
-			margin-bottom: 75px;
+			//margin-bottom: 75px;
 			position: absolute;
 			right: 15%;
-			top: 3%;
+			top: 5%;
 		}
 		.bio {
 			width: 70%;
@@ -767,6 +770,10 @@ a,
 	font-size: 4rem;
 	font-weight: bold;
 	text-align: center;
+	&:active {
+		font-size: 4.5rem;
+		transition: $transition-speed;
+	}
 }
 
 .close:hover,
@@ -1093,9 +1100,17 @@ a,
 
 .pillar-img {
 	display: block;
-	width: 50%;
+	width: 35%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 30px;
+	background: white;
+
+	border-radius: $border-radius;
+	box-shadow: $material-box-shadow;
+}
+
+.sixty-percent {
+	width: 60%;
 }
 .float-left {
 	float: left;
@@ -1151,7 +1166,7 @@ a,
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	max-width: 900px;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	padding: 20px;
 
