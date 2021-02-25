@@ -147,13 +147,12 @@ h1 {
 }
 
 .about-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-hero.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.jpg");
 	min-height: 50vh;
 }
 
 .general-public-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("images/general-public-hero.png");
-	//background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("images/general-public-new3-extend.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url("images/test.jpg");
 
 	.text-container h1 {
 		width: 50%;
@@ -188,6 +187,7 @@ h1 {
 .investors-hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.webp");
 	background-position: bottom;
+	min-height: 70vh;
 }
 
 .pillar-hero {
@@ -631,7 +631,7 @@ a,
 	input[type="submit"] {
 		background-color: $tan;
 		width: 50%;
-		font-size: $header-font-size;
+		font-size: $quote-font-size;
 		color: white;
 		float: right;
 
@@ -701,12 +701,10 @@ a,
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		//align-items: flex-start;
 
 		h1 {
 			font-size: $header-font-size;
 			text-align: left;
-			padding-left: 60px;
 		}
 		.img-container {
 			width: 30%;
@@ -743,21 +741,14 @@ a,
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: flex-start;
-		p {
-			text-align: center;
-			//width: 100%;
-		}
-		ul {
-			width: 100%;
-			margin: 0 auto;
+		p,
+		h4 {
 			text-align: left;
 		}
-		ul li:first-child {
-			list-style: none;
-		}
-		h2 {
-			width: 100%;
-			text-align: center;
+		ul {
+			width: 75%;
+			margin: 0 auto;
+			text-align: left;
 		}
 	}
 }
@@ -1136,7 +1127,8 @@ a,
 	}
 }
 .banner-6 {
-	background-color: #b7ab9b;
+	//background-color: #b7ab9b;
+	background: #cccbc7; //#cedfc8;
 
 	a {
 		border-radius: $border-radius;
@@ -1304,6 +1296,12 @@ a,
 		}
 		#hide-mobile {
 			display: none;
+		}
+	}
+
+	.modal .definition-modal-content {
+		ul {
+			width: 100%;
 		}
 	}
 

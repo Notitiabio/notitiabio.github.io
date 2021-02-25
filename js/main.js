@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   let currTime = new Date().getTime();
   let difference = currTime - localStorage.getItem("time");
-  let timeout = 300000; // resets pop up after 5 minutes
+  let timeout = 600000; // resets pop up after 5 minutes
 
   if(localStorage.getItem("first-visit") == null || difference > timeout) {
     var modal = "#clinical-trial-modal";

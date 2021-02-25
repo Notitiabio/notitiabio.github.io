@@ -104,12 +104,12 @@ h1 {
 }
 
 .about-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.jpg");
   min-height: 50vh;
 }
 
 .general-public-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("images/general-public-hero.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/test.jpg");
 }
 .general-public-hero .text-container h1 {
   width: 50%;
@@ -139,6 +139,7 @@ h1 {
 .investors-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.webp");
   background-position: bottom;
+  min-height: 70vh;
 }
 
 .pillar-hero {
@@ -553,7 +554,7 @@ a:active,
 .contact input[type=submit] {
   background-color: #ebb992;
   width: 50%;
-  font-size: calc(12px + 3vw);
+  font-size: calc(12px + 1vw);
   color: white;
   float: right;
 }
@@ -630,7 +631,6 @@ a:active,
 .modal .contact-modal-content h1 {
   font-size: calc(12px + 3vw);
   text-align: left;
-  padding-left: 60px;
 }
 .modal .person-modal-content .img-container,
 .modal .contact-modal-content .img-container {
@@ -675,20 +675,14 @@ a:active,
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.modal .definition-modal-content p {
-  text-align: center;
-}
-.modal .definition-modal-content ul {
-  width: 100%;
-  margin: 0 auto;
+.modal .definition-modal-content p,
+.modal .definition-modal-content h4 {
   text-align: left;
 }
-.modal .definition-modal-content ul li:first-child {
-  list-style: none;
-}
-.modal .definition-modal-content h2 {
-  width: 100%;
-  text-align: center;
+.modal .definition-modal-content ul {
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .definition-text {
@@ -944,7 +938,7 @@ a:active,
 }
 
 .banner-6 {
-  background-color: #b7ab9b;
+  background: #cccbc7;
 }
 .banner-6 a {
   border-radius: 25px;
@@ -1109,6 +1103,10 @@ a:active,
   }
   .top-nav #hide-mobile {
     display: none;
+  }
+
+  .modal .definition-modal-content ul {
+    width: 100%;
   }
 
   .banner-6 a {
