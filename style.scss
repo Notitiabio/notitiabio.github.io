@@ -37,6 +37,7 @@ $material-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2
 	font-family: $font;
 	box-sizing: border-box;
 	color: $space-cadet;
+	will-change: transform;
 }
 
 html {

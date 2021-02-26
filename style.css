@@ -3,6 +3,7 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   color: #1d294d;
+  will-change: transform;
 }
 
 html {
