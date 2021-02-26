@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.content-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
 }
