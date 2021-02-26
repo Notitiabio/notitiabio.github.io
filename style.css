@@ -3,7 +3,6 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   color: #1d294d;
-  will-change: transform;
 }
 
 html {
@@ -1161,6 +1160,15 @@ a:active,
   }
   .hamburger:hover div {
     background-color: white;
+  }
+
+  [data-aos=shrink] {
+    transform: scale(1);
+    border-radius: 0;
+    transition-property: transform, border-radius;
+  }
+  [data-aos=shrink].aos-animate {
+    transform: scale(1);
   }
 }
 
