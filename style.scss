@@ -250,7 +250,7 @@ footer {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		padding: 0 60px;
+		padding: 20px 60px;
 		background-color: rgba(0, 0, 0, .6);
 		height: 100%;
 
@@ -598,6 +598,7 @@ a,
 
 	figure {
 		text-align: center;
+		width: 150px;
 	}
 
 	h1 {
@@ -606,7 +607,6 @@ a,
 	}
 
 	img {
-		width: 200px;
 		border-radius: 500px;
 		padding-bottom: 20px;
 
@@ -927,7 +927,7 @@ a,
 .pipeline-container {
 	box-shadow: $material-box-shadow;
 
-	h1 {
+	h2 {
 		padding-top: 50px;
 		margin: 0;
 	}
@@ -935,7 +935,6 @@ a,
 .pipeline {
 	width: 100%;
 	border-spacing: 0 50px;
-
 	thead {
 		tr {
 			background: $space-cadet;
@@ -1041,17 +1040,18 @@ a,
 
 .pillar-img {
 	display: block;
-	width: 35%;
+	//width: 35%;
+	width: 50%;
 	margin: 0 auto;
 	padding: 30px;
-	background: white;
+	//background: white;
 
-	border-radius: $border-radius;
-	box-shadow: $material-box-shadow;
+	//border-radius: $border-radius;
+	//box-shadow: $material-box-shadow;
 }
 
-.sixty-percent {
-	width: 60%;
+.seventy-percent {
+	width: 70%;
 }
 .float-left {
 	float: left;
@@ -1091,7 +1091,7 @@ a,
 	a {
 		border-radius: $border-radius;
 		border: none;
-		font-size: $header-font-size;
+		font-size: $quote-font-size;
 		width: 44%;
 		background-color: white;
 		text-align: center;
@@ -1109,7 +1109,7 @@ a,
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	max-width: 900px;
-	width: 40%;
+	width: 30%;
 	margin: 0 auto;
 	padding: 20px;
 
@@ -1214,14 +1214,14 @@ a,
 	.half {
 		width: 100%;
 	}
-	.sixty-percent {
+	.seventy-percent {
 		width: 100%;
 	}
 	.pillar-img,
 	.chicken-egg {
 		float: none;
 		margin: 0 auto;
-		width: 75%;
+		width: 100%;
 	}
 	.chicken-egg {
 		width: 100%;
