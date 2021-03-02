@@ -154,7 +154,7 @@ h1 {
 .investors-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/news.webp");
   background-position: bottom;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .pillar-hero {
@@ -488,11 +488,12 @@ footer {
 .top-nav .dropdown .dropdown-content a:nth-child(even) {
   background-color: white;
 }
-.top-nav .show-mobile {
-  display: none;
-}
 .top-nav #hide-mobile {
   display: block;
+}
+
+.show-mobile {
+  display: none;
 }
 
 a,
@@ -630,9 +631,9 @@ a:active,
   /* Sit on top */
   left: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   /* Full width */
-  height: 100vh;
+  height: 100%;
   /* Full height */
   background-color: black;
   /* Fallback color */
@@ -669,7 +670,7 @@ a:active,
   padding-right: 20px;
   position: absolute;
   right: 15%;
-  top: 5%;
+  top: 25px;
 }
 .modal .person-modal-content .bio,
 .modal .contact-modal-content .bio {
@@ -853,6 +854,9 @@ a:active,
   max-width: 800px;
   font-size: 18px;
 }
+.pipeline tbody tr {
+  height: 70px;
+}
 .pipeline td,
 .pipeline th {
   padding: 8px 14px;
@@ -905,6 +909,7 @@ a:active,
   .pipeline tbody tr {
     padding: 50px 0;
     display: block;
+    height: auto;
   }
   .pipeline:nth-of-type(odd) {
     background: #f3f3f3;
@@ -1070,29 +1075,27 @@ a:active,
     position: static;
   }
 
-  .modal .person-modal-content,
-.modal .contact-modal-content {
+  .modal .person-modal-content {
     width: 100%;
   }
-  .modal .person-modal-content .img-container,
-.modal .contact-modal-content .img-container {
+  .modal .person-modal-content .img-container {
     width: 70%;
   }
-  .modal .person-modal-content .close,
-.modal .contact-modal-content .close {
+  .modal .person-modal-content .close {
     position: static;
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  .modal .person-modal-content .bio,
-.modal .contact-modal-content .bio {
+  .modal .person-modal-content .bio {
     width: 100%;
   }
-  .modal .person-modal-content .bio h1,
-.modal .contact-modal-content .bio h1 {
+  .modal .person-modal-content .bio h1 {
     text-align: center;
     padding: 0;
+  }
+  .modal .contact-modal-content {
+    width: 100%;
   }
 
   .half {
@@ -1119,6 +1122,19 @@ a:active,
   }
 }
 @media only screen and (max-width: 700px) {
+  .home-hero {
+    min-height: auto;
+  }
+  .home-hero .text-container img {
+    width: 75%;
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+  }
+  .home-hero .text-container h1 {
+    width: 75%;
+  }
+
   .carousel-item .carousel-text .paragraph {
     height: 70%;
   }
@@ -1148,11 +1164,12 @@ a:active,
     margin: 0;
     padding: 15px 5px;
   }
-  .top-nav .show-mobile {
-    display: block;
-  }
   .top-nav #hide-mobile {
     display: none;
+  }
+
+  .show-mobile {
+    display: block;
   }
 
   .modal .definition-modal-content ul {
@@ -1201,6 +1218,7 @@ a:active,
   }
   [data-aos=shrink].aos-animate {
     transform: scale(1);
+    border-radius: 0;
   }
 }
 
