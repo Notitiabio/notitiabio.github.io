@@ -5,8 +5,14 @@
   color: #1d294d;
 }
 
+h2,
+h3,
+h4,
+h5 {
+  width: 100%;
+}
+
 html {
-  font-size: 100%;
   scroll-behavior: smooth;
 }
 
@@ -49,7 +55,7 @@ img {
   border-radius: 25px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border: none;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   transition: 300ms;
 }
 .move-top:hover {
@@ -67,7 +73,7 @@ h5 {
 }
 
 h1 {
-  font-size: calc(12px + 3vw);
+  font-size: calc(10px + 2vw);
 }
 
 .phd {
@@ -75,7 +81,7 @@ h1 {
 }
 
 .notitia-fade {
-  font-size: calc(16px + 3vw);
+  font-size: calc(18px + 2vw);
 }
 .notitia-fade .notitia-container {
   width: 100%;
@@ -84,6 +90,10 @@ h1 {
 }
 .notitia-fade .notitia-container img {
   width: 400px;
+}
+
+.left-align {
+  text-align: left;
 }
 
 .hero {
@@ -104,16 +114,17 @@ h1 {
   color: white;
   width: 100%;
   text-align: center;
-  font-size: calc(16px + 3vw);
+  font-size: calc(18px + 2vw);
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .home-hero {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/home-hero.webp");
   background-position: bottom;
+  min-height: 75vh;
 }
 .home-hero .text-container h1 {
-  width: 50%;
+  width: 40%;
   text-align: left;
 }
 .home-hero .text-container h1 a {
@@ -122,7 +133,6 @@ h1 {
 
 .about-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.webp");
-  min-height: 50vh;
 }
 
 .general-public-hero {
@@ -166,7 +176,7 @@ footer {
 }
 
 .carousel {
-  height: 90vh;
+  height: 500px;
   width: 100%;
   position: relative;
   display: flex;
@@ -186,22 +196,30 @@ footer {
   top: 0;
   width: 100%;
   padding: 0 60px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
 }
 .carousel-item .carousel-text .paragraph {
-  font-size: calc(7px + 1vw + 1vh);
+  font-size: 18px;
   width: 100%;
-  height: 50%;
+  height: 65%;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carousel-item .carousel-text .paragraph p {
+  width: 100%;
 }
 .carousel-item .carousel-text h1 {
   width: 100%;
   text-align: left;
 }
-.carousel-item .carousel-text .paragraph,
 .carousel-item .carousel-text h1,
-.carousel-item .carousel-text strong {
+.carousel-item .carousel-text h2,
+.carousel-item .carousel-text .paragraph p,
+.carousel-item .carousel-text .paragraph strong {
   color: white;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -217,6 +235,7 @@ footer {
   object-fit: cover;
   object-position: left;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  filter: blur(7px);
 }
 
 .carousel-control-prev,
@@ -405,11 +424,11 @@ footer {
   color: white;
 }
 .metallic-seaweed h1 {
-  font-size: calc(16px + 3vw);
+  font-size: calc(18px + 2vw);
 }
 
 .quote {
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   text-align: center;
 }
 
@@ -498,10 +517,6 @@ a:active,
   opacity: 50%;
 }
 
-.team-banner {
-  font-size: calc(16px + 3vw);
-}
-
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -528,6 +543,9 @@ a:active,
   text-align: center;
   max-width: 200px;
 }
+.team figcaption h3 {
+  margin: 0;
+}
 
 .caption {
   font-size: 0.75rem;
@@ -545,7 +563,7 @@ a:active,
   padding: 3%;
 }
 .contact label {
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
 }
 .contact input,
 .contact textarea {
@@ -563,7 +581,7 @@ a:active,
 .contact input[type=submit] {
   background-color: #ebb992;
   width: 50%;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   color: white;
   float: right;
 }
@@ -591,7 +609,7 @@ a:active,
   background-color: #ebb992;
   color: white;
   border: none;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   right: 2%;
   bottom: 2%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -638,7 +656,7 @@ a:active,
 }
 .modal .person-modal-content h1,
 .modal .contact-modal-content h1 {
-  font-size: calc(12px + 3vw);
+  font-size: calc(10px + 2vw);
   text-align: left;
 }
 .modal .person-modal-content .img-container,
@@ -667,7 +685,7 @@ a:active,
 .modal .person-modal-content li,
 .modal .contact-modal-content li {
   padding: 20px;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
 }
 .modal .definition-modal-content {
   background-color: white;
@@ -694,7 +712,7 @@ a:active,
 }
 
 .definition-text {
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   text-align: center;
   padding: 3%;
   width: 85%;
@@ -742,7 +760,7 @@ a:active,
 .comparison .comparison-item {
   width: 50%;
   padding: 3%;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
 }
 .comparison .comparison-item ul {
   padding: 0;
@@ -805,8 +823,6 @@ a:active,
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 95%;
 }
 .read-more h1 {
   width: 100%;
@@ -835,7 +851,7 @@ a:active,
   color: white;
   margin: 0;
   max-width: 800px;
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
 }
 .pipeline td,
 .pipeline th {
@@ -910,7 +926,7 @@ a:active,
 }
 .frame p,
 .frame li {
-  font-size: calc(12px + 1vw);
+  font-size: 18px;
   display: block;
 }
 
@@ -940,6 +956,7 @@ a:active,
   background-color: #324151;
 }
 .banner-3 h1,
+.banner-3 h2,
 .banner-3 p {
   color: white;
 }
@@ -952,6 +969,7 @@ a:active,
   background-color: #373837;
 }
 .banner-5 h1,
+.banner-5 h2,
 .banner-5 p {
   color: white;
 }
@@ -962,7 +980,7 @@ a:active,
 .banner-6 a {
   border-radius: 25px;
   border: none;
-  font-size: calc(12px + 3vw);
+  font-size: calc(10px + 2vw);
   width: 44%;
   background-color: white;
   text-align: center;
