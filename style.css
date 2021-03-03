@@ -1139,6 +1139,7 @@ a:active,
     background: white;
     padding: 25px;
     border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
   .home-hero .text-container h1 {
     width: 75%;
