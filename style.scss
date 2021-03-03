@@ -39,6 +39,7 @@ $material-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2
 	font-family: $font;
 	box-sizing: border-box;
 	color: $space-cadet;
+	line-height: 2;
 }
 
 h2,
@@ -223,6 +224,16 @@ footer {
 	padding: 20px;
 	text-align: center;
 	font-size: .75rem;
+}
+
+.map {
+	iframe {
+		height: 450px;
+	}
+	div h3 {
+		text-align: left;
+		padding: 20px;
+	}
 }
 
 // carousel

@@ -3,6 +3,7 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   color: #1d294d;
+  line-height: 2;
 }
 
 h2,
@@ -173,6 +174,14 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 0.75rem;
+}
+
+.map iframe {
+  height: 450px;
+}
+.map div h3 {
+  text-align: left;
+  padding: 20px;
 }
 
 .carousel {
