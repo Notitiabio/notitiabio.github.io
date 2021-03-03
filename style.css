@@ -210,8 +210,9 @@ footer {
   line-height: 1.5;
 }
 .carousel-item .carousel-text .paragraph {
+  font-size: 18px;
   width: 100%;
-  height: 270px;
+  height: 300px;
   overflow: auto;
   display: flex;
   justify-content: center;
@@ -260,14 +261,14 @@ footer {
 }
 .carousel-control-prev .fas,
 .carousel-control-next .fas {
-  background: #328490;
+  background: #92e0e1;
   color: #e2e2e2;
   padding: 20px 10px;
   transition: 300ms;
 }
 .carousel-control-prev .fas:hover,
 .carousel-control-next .fas:hover {
-  background: #183f44;
+  background: #42c9cb;
   transition: 300ms;
 }
 .carousel-control-prev .fas:active,

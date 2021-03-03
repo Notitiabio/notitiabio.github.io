@@ -270,9 +270,9 @@ footer {
 
 		.paragraph {
 			//font-size: calc(7px + 1vw + 1vh);
-			//font-size: $quote-font-size;
+			font-size: $quote-font-size;
 			width: 100%;
-			height: 270px;
+			height: 300px;
 			overflow: auto;
 			display: flex;
 			justify-content: center;
@@ -322,13 +322,14 @@ footer {
 
 	.fas {
 		//background-color: rgb(146, 224, 225, .8);
-		background: $metallic-seaweed;
+		//background: $metallic-seaweed;
+		background: $middle-blue-green;
 		color: #e2e2e2;
 		padding: 20px 10px;
 		transition: 300ms;
 
 		&:hover {
-			background: darken($metallic-seaweed, 20%);
+			background: darken($middle-blue-green, 20%);
 			transition: 300ms;
 		}
 		&:active {
