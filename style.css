@@ -52,7 +52,7 @@ img {
   left: 2%;
   z-index: 50;
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 25px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border: none;
@@ -613,7 +613,7 @@ a:active,
 }
 
 .contact-us {
-  padding: 20px;
+  padding: 15px;
   border-radius: 25px;
   position: fixed;
   background-color: #ebb992;
@@ -1081,27 +1081,30 @@ a:active,
     position: static;
   }
 
-  .modal .person-modal-content {
+  .modal .person-modal-content,
+.modal .contact-modal-content {
     width: 100%;
   }
-  .modal .person-modal-content .img-container {
+  .modal .person-modal-content .img-container,
+.modal .contact-modal-content .img-container {
     width: 70%;
   }
-  .modal .person-modal-content .close {
+  .modal .person-modal-content .close,
+.modal .contact-modal-content .close {
     position: static;
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
-  .modal .person-modal-content .bio {
+  .modal .person-modal-content .bio,
+.modal .contact-modal-content .bio {
     width: 100%;
   }
-  .modal .person-modal-content .bio h1 {
+  .modal .person-modal-content .bio h1,
+.modal .contact-modal-content .bio h1 {
     text-align: center;
     padding: 0;
-  }
-  .modal .contact-modal-content {
-    width: 100%;
   }
 
   .half {

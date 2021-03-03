@@ -89,7 +89,7 @@ img {
 	left: 2%;
 	z-index: 50;
 	background-color: white;
-	padding: 20px;
+	padding: 15px;
 	border-radius: $border-radius;
 	box-shadow: $material-box-shadow;
 	border: none;
@@ -699,7 +699,7 @@ a,
 }
 
 .contact-us {
-	padding: 20px;
+	padding: 15px;
 	border-radius: $border-radius;
 	position: fixed;
 	background-color: $tan;
@@ -1199,7 +1199,8 @@ a,
 		}
 	}
 	.modal {
-		.person-modal-content {
+		.person-modal-content,
+		.contact-modal-content {
 			width: 100%;
 			.img-container {
 				width: 70%;
@@ -1209,6 +1210,7 @@ a,
 				width: 100%;
 				margin: 0;
 				padding: 0;
+				text-align: center;
 			}
 			.bio {
 				width: 100%;
@@ -1217,9 +1219,6 @@ a,
 					padding: 0;
 				}
 			}
-		}
-		.contact-modal-content {
-			width: 100%;
 		}
 	}
 	.half {
