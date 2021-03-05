@@ -133,7 +133,7 @@ h1 {
 }
 
 .about-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-blur.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-us-hero.webp");
 }
 
 .general-public-hero {
