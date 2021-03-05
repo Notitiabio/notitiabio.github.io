@@ -179,9 +179,12 @@ footer {
 .map iframe {
   height: 450px;
 }
-.map div h3 {
+.map div h4 {
   text-align: left;
   padding: 20px;
+}
+.map div p {
+  font-weight: normal;
 }
 
 .carousel {
