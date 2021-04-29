@@ -1,9 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto&display=swap';
 
 //colors
-$metallic-seaweed: #328490;
+$metallic-seaweed: #2a8692;
 $middle-blue-green: #92e0e1;
-$space-cadet: #1d294d;
+$space-cadet: #1d2945;
 $light-text: white;
 $tan: #ebb992;
 $notitia-gray: #707070;
@@ -952,10 +952,15 @@ a,
 .pipeline {
 	width: 100%;
 	border-spacing: 0 50px;
+	table-layout: fixed;
+
 	thead {
 		tr {
 			background: $space-cadet;
 			th {
+				&:first-child {
+					width: 30%;
+				}
 				color: white;
 				margin: 0;
 				max-width: 800px;
@@ -1025,12 +1030,9 @@ a,
 			display: block;
 			height: auto;
 		}
-		&:nth-of-type(odd) {
-			background: #f3f3f3;
+
+		tbody tr:nth-of-type(odd) {
 			background: $middle-blue-green;
-		}
-		tbody tr:nth-of-type(even) {
-			background: #fff;
 		}
 		.completed,
 		.in-progress {
@@ -1328,6 +1330,10 @@ a,
 		top: 10px;
 		transition-timing-function: ease-in-out;
 		z-index: 999;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		div {
 			width: 30px;

@@ -2,7 +2,7 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  color: #1d294d;
+  color: #1d2945;
   line-height: 2;
 }
 
@@ -430,7 +430,7 @@ footer {
 }
 
 .metallic-seaweed {
-  background-color: #328490;
+  background-color: #2a8692;
 }
 .metallic-seaweed * {
   color: white;
@@ -445,7 +445,7 @@ footer {
 }
 
 .space-cadet {
-  background-color: #1d294d;
+  background-color: #1d2945;
   color: white;
 }
 .space-cadet * {
@@ -589,7 +589,7 @@ a:active,
 .contact input:focus,
 .contact textarea:focus {
   outline: none;
-  border: 1px solid #1d294d;
+  border: 1px solid #1d2945;
 }
 .contact input[type=submit] {
   background-color: #ebb992;
@@ -783,11 +783,11 @@ a:active,
 }
 
 .seaweed-text {
-  color: #328490;
+  color: #2a8692;
 }
 .seaweed-text h4,
 .seaweed-text li {
-  color: #328490;
+  color: #2a8692;
 }
 
 .red-text {
@@ -856,15 +856,19 @@ a:active,
 .pipeline {
   width: 100%;
   border-spacing: 0 50px;
+  table-layout: fixed;
 }
 .pipeline thead tr {
-  background: #1d294d;
+  background: #1d2945;
 }
 .pipeline thead tr th {
   color: white;
   margin: 0;
   max-width: 800px;
   font-size: 18px;
+}
+.pipeline thead tr th:first-child {
+  width: 30%;
 }
 .pipeline tbody tr {
   height: 70px;
@@ -923,16 +927,12 @@ a:active,
     display: block;
     height: auto;
   }
-  .pipeline:nth-of-type(odd) {
-    background: #f3f3f3;
+  .pipeline tbody tr:nth-of-type(odd) {
     background: #92e0e1;
-  }
-  .pipeline tbody tr:nth-of-type(even) {
-    background: #fff;
   }
   .pipeline .completed,
 .pipeline .in-progress {
-    color: #1d294d;
+    color: #1d2945;
     background: none;
   }
 }
@@ -1043,7 +1043,7 @@ a:active,
 }
 .kid h2,
 .kid p {
-  color: #1d294d;
+  color: #1d2945;
   width: 50%;
   text-align: right;
 }
@@ -1052,7 +1052,7 @@ a:active,
   box-shadow: 0 0 8px 8px #edeeec inset;
 }
 .kid a {
-  color: #328490;
+  color: #2a8692;
 }
 
 .gutter {
@@ -1193,7 +1193,7 @@ a:active,
     display: block;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(5px);
-    border: 1px solid #1d294d;
+    border: 1px solid #1d2945;
     border-radius: 5px;
     width: 50px;
     padding: 5px;
@@ -1203,6 +1203,9 @@ a:active,
     top: 10px;
     transition-timing-function: ease-in-out;
     z-index: 999;
+  }
+  .hamburger:hover {
+    cursor: pointer;
   }
   .hamburger div {
     width: 30px;
