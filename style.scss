@@ -1203,13 +1203,6 @@ a,
 	}
 }
 @media only screen and (max-width: 900px) {
-	#pipeline-covid,
-	#pipeline-ms {
-		display: table-row;
-		td {
-			padding: 0;
-		}
-	}
 	.top-nav {
 		padding: 0 10px;
 		a {
@@ -1272,6 +1265,13 @@ a,
 }
 
 @media only screen and (max-width: 700px) {
+	#pipeline-covid,
+	#pipeline-ms {
+		display: table-row;
+		td {
+			padding: 0;
+		}
+	}
 	.home-hero {
 		.text-container {
 			img {

@@ -1075,15 +1075,6 @@ a:active,
   }
 }
 @media only screen and (max-width: 900px) {
-  #pipeline-covid,
-#pipeline-ms {
-    display: table-row;
-  }
-  #pipeline-covid td,
-#pipeline-ms td {
-    padding: 0;
-  }
-
   .top-nav {
     padding: 0 10px;
   }
@@ -1149,6 +1140,15 @@ a:active,
   }
 }
 @media only screen and (max-width: 700px) {
+  #pipeline-covid,
+#pipeline-ms {
+    display: table-row;
+  }
+  #pipeline-covid td,
+#pipeline-ms td {
+    padding: 0;
+  }
+
   .home-hero {
     min-height: auto;
   }
