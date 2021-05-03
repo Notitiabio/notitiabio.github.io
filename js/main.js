@@ -37,17 +37,17 @@ $(document).ready(function() {
 
 	//pipeline dropdowns
 	$('#pipeline-covid-dropdown').click(function() {
-		if ($('#pipeline-covid').css('display') == 'table-row') {
+		if ($('#pipeline-covid').css('display') == 'block') {
 			$('#pipeline-covid').css('display', 'none');
 		} else {
-			$('#pipeline-covid').css('display', 'table-row');
+			$('#pipeline-covid').css('display', 'block');
 		}
 	});
 	$('#pipeline-ms-dropdown').click(function() {
-		if ($('#pipeline-ms').css('display') == 'table-row') {
+		if ($('#pipeline-ms').css('display') == 'block') {
 			$('#pipeline-ms').css('display', 'none');
 		} else {
-			$('#pipeline-ms').css('display', 'table-row');
+			$('#pipeline-ms').css('display', 'block');
 		}
 	});
 

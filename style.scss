@@ -1040,6 +1040,12 @@ a,
 		tbody tr:nth-of-type(odd) {
 			background: $middle-blue-green;
 		}
+		tbody tr:nth-of-type(2) {
+			background: $middle-blue-green;
+		}
+		tbody tr:nth-of-type(3) {
+			background: white;
+		}
 		.completed,
 		.in-progress {
 			color: $space-cadet;
@@ -1187,7 +1193,10 @@ a,
 	background-color: white;
 }
 
-//investors
+#pipeline-covid,
+#pipeline-ms {
+	display: none;
+}
 
 @media only screen and (max-width: 1000px) {
 	.square,
@@ -1196,12 +1205,7 @@ a,
 		padding: 20px;
 	}
 }
-@media only screen and (min-width: 900px) {
-	#pipeline-covid,
-	#pipeline-ms {
-		display: none;
-	}
-}
+
 @media only screen and (max-width: 900px) {
 	.top-nav {
 		padding: 0 10px;
@@ -1267,9 +1271,10 @@ a,
 @media only screen and (max-width: 700px) {
 	#pipeline-covid,
 	#pipeline-ms {
-		display: table-row;
+		// display: table-row;
+		//display: none;
 		td {
-			padding: 0;
+			padding-left: 0;
 		}
 	}
 	.home-hero {
