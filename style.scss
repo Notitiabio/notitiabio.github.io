@@ -949,6 +949,7 @@ a,
 		margin: 0;
 	}
 }
+
 .pipeline {
 	width: 100%;
 	border-spacing: 0 50px;
@@ -970,6 +971,10 @@ a,
 	}
 	tbody tr {
 		height: 70px;
+
+		// td:first-child {
+		// 	width: 30%;
+		// }
 	}
 	td,
 	th {
@@ -1191,8 +1196,20 @@ a,
 		padding: 20px;
 	}
 }
-
+@media only screen and (min-width: 900px) {
+	#pipeline-covid,
+	#pipeline-ms {
+		display: none;
+	}
+}
 @media only screen and (max-width: 900px) {
+	#pipeline-covid,
+	#pipeline-ms {
+		display: table-row;
+		td {
+			padding: 0;
+		}
+	}
 	.top-nav {
 		padding: 0 10px;
 		a {
