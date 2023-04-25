@@ -2,17 +2,24 @@ $(document).ready(function () {
 	let currTime = new Date().getTime();
 	let difference = currTime - localStorage.getItem('time');
 	let timeout = 600000; // resets pop up after 5 minutes
+	//let timeout = 0;
 
-	// if (localStorage.getItem('first-visit') == null || difference > timeout) {
-	// 	var modal = '#clinical-trial-modal';
-	// 	$(modal).css('display', 'block');
-	// 	$('span').click(function() {
-	// 		$(modal).css('display', 'none');
-	// 	});
+	if (localStorage.getItem('first-visit') == null || difference > timeout) {
+		var modal = '#popup-modal';
+		$(modal).css('display', 'block');
+		$('span').click(function() {
+			$(modal).css('display', 'none');
+		});
 
-	// 	localStorage.setItem('first-visit', 'false');
-	// 	localStorage.setItem('time', currTime);
-	// }
+		localStorage.setItem('first-visit', 'false');
+		localStorage.setItem('time', currTime);
+	}
+
+	//Open Notitia Store button
+	$('#store-button').click(function (event) {
+		// location.href = 'https://store.notitiabio.com';
+		window.open('https://store.notitiabio.com', '_blank');
+	});
 
 	//open person modal
 	$('figure.person').click(function (event) {

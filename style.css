@@ -634,33 +634,31 @@ a:active,
   cursor: pointer;
 }
 
-.modal {
-  display: none;
-  /* Hidden by default */
+#store-button {
   position: fixed;
-  /* Stay in place */
-  z-index: 2;
-  /* Sit on top */
+  bottom: 40px;
+  right: 2%;
+  bottom: 100px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Black w/ opacity */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
   overflow: auto;
 }
 .modal .person-modal-content,
 .modal .contact-modal-content {
   background-color: white;
-  margin: 2% auto;
-  /* 15% from the top and centered */
+  margin: 2% auto; /* 15% from the top and centered */
   padding: 0;
-  width: 75%;
-  /* Could be more or less, depending on screen size */
+  width: 75%; /* Could be more or less, depending on screen size */
   border-radius: 25px;
   overflow: auto;
   display: flex;
@@ -702,11 +700,9 @@ a:active,
 }
 .modal .definition-modal-content {
   background-color: white;
-  margin: 2% auto;
-  /* 15% from the top and centered */
+  margin: 2% auto; /* 15% from the top and centered */
   padding: 3%;
-  width: 75%;
-  /* Could be more or less, depending on screen size */
+  width: 75%; /* Could be more or less, depending on screen size */
   border-radius: 25px;
   overflow: auto;
   display: flex;
@@ -908,9 +904,9 @@ a:active,
     text-align: left;
   }
   .pipeline .condition:before,
-.pipeline .treatment:before,
-.pipeline .completed:before,
-.pipeline .in-progress:before {
+  .pipeline .treatment:before,
+  .pipeline .completed:before,
+  .pipeline .in-progress:before {
     position: absolute;
     top: 8px;
     left: 10px;
@@ -937,7 +933,7 @@ a:active,
     background: white;
   }
   .pipeline .completed,
-.pipeline .in-progress {
+  .pipeline .in-progress {
     color: #1d2945;
     background: none;
   }
@@ -1074,7 +1070,7 @@ a:active,
 
 @media only screen and (max-width: 1000px) {
   .square,
-.square-img {
+  .square-img {
     width: 100%;
     padding: 20px;
   }
@@ -1086,25 +1082,23 @@ a:active,
   .top-nav a {
     margin: 25px 5px;
   }
-
   .comparison .comparison-item,
-.comparison .comparison-header {
+  .comparison .comparison-header {
     width: 100%;
   }
   .comparison .comparison-vs {
     position: static;
   }
-
   .modal .person-modal-content,
-.modal .contact-modal-content {
+  .modal .contact-modal-content {
     width: 100%;
   }
   .modal .person-modal-content .img-container,
-.modal .contact-modal-content .img-container {
+  .modal .contact-modal-content .img-container {
     width: 70%;
   }
   .modal .person-modal-content .close,
-.modal .contact-modal-content .close {
+  .modal .contact-modal-content .close {
     position: static;
     width: 100%;
     margin: 0;
@@ -1112,44 +1106,38 @@ a:active,
     text-align: center;
   }
   .modal .person-modal-content .bio,
-.modal .contact-modal-content .bio {
+  .modal .contact-modal-content .bio {
     width: 100%;
   }
   .modal .person-modal-content .bio h1,
-.modal .contact-modal-content .bio h1 {
+  .modal .contact-modal-content .bio h1 {
     text-align: center;
     padding: 0;
   }
-
   .half {
     width: 100%;
   }
-
   .seventy-percent {
     width: 100%;
   }
-
   .pillar-img,
-.chicken-egg {
+  .chicken-egg {
     float: none;
     margin: 0 auto;
     width: 100%;
   }
-
   .chicken-egg {
     width: 100%;
   }
-
   .read-more a {
     width: 50%;
   }
 }
 @media only screen and (max-width: 700px) {
   #pipeline-covid td,
-#pipeline-ms td {
+  #pipeline-ms td {
     padding-left: 0;
   }
-
   .home-hero {
     min-height: auto;
   }
@@ -1163,7 +1151,6 @@ a:active,
   .home-hero .text-container h1 {
     width: 75%;
   }
-
   .top-nav {
     display: block;
     position: fixed;
@@ -1192,19 +1179,15 @@ a:active,
   .top-nav #hide-mobile {
     display: none;
   }
-
   .show-mobile {
     display: block;
   }
-
   .modal .definition-modal-content ul {
     width: 100%;
   }
-
   .banner-6 a {
     width: 100%;
   }
-
   .hamburger {
     display: block;
     background-color: rgba(255, 255, 255, 0.4);
@@ -1238,7 +1221,6 @@ a:active,
   .hamburger:hover div {
     background-color: white;
   }
-
   [data-aos=shrink] {
     transform: scale(1);
     border-radius: 0;
