@@ -7,7 +7,7 @@ $(document).ready(function () {
 	if (localStorage.getItem('first-visit') == null || difference > timeout) {
 		var modal = '#popup-modal';
 		$(modal).css('display', 'block');
-		$('span').click(function() {
+		$('span').click(function () {
 			$(modal).css('display', 'none');
 		});
 
